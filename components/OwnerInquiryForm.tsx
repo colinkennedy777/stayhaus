@@ -82,7 +82,7 @@ export function OwnerInquiryForm() {
           value={values.city}
           onChange={(e) => update("city", e.target.value)}
           type="text"
-          placeholder="e.g. Sarasota, FL"
+          placeholder="e.g. Tampa, FL"
           className="form-input"
         />
       </Field>

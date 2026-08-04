@@ -60,10 +60,10 @@ export const guides: Guide[] = [
     ],
   },
   {
-    destinationSlug: "clearwater-beach",
+    destinationSlug: "gulf-beaches",
     intro:
       "Clearwater moves at the speed of the tide — long walks on powder-white sand, seafood by the marina, and sunsets that stop conversation.",
-    heroImage: "/images/destinations/clearwater-beach.jpg",
+    heroImage: "/images/destinations/gulf-beaches.jpg",
     categories: [
       {
         label: "Restaurants",
@@ -111,60 +111,6 @@ export const guides: Guide[] = [
         items: [
           { name: "Sunset cruise from the marina", note: "Best booked a day ahead in peak season." },
           { name: "Sand sculpting at Pier 60", note: "A beloved local tradition, most evenings." },
-        ],
-      },
-    ],
-  },
-  {
-    destinationSlug: "sarasota",
-    intro:
-      "Sarasota pairs barrier-island beaches with a genuine arts scene — a slower, more design-minded corner of the Gulf Coast.",
-    heroImage: "/images/guides/sarasota-hero.svg",
-    categories: [
-      {
-        label: "Restaurants",
-        items: [
-          { name: "Owen's Fish Camp", note: "Southern seafood in a converted cottage." },
-          { name: "Indigenous", note: "Farm-to-table tasting menus in Laurel Park." },
-        ],
-      },
-      {
-        label: "Coffee",
-        items: [
-          { name: "Drip Coffee Boutique", note: "A local roastery with a downtown patio." },
-        ],
-      },
-      {
-        label: "Bars & Nightlife",
-        items: [
-          { name: "The Bazaar on Apricot & Lime", note: "Botanical cocktails in a garden setting." },
-        ],
-      },
-      {
-        label: "Beaches & Outdoors",
-        items: [
-          { name: "Siesta Key Beach", note: "Quartz sand, consistently rated among the world's best." },
-          { name: "Lido Key", note: "A quieter alternative, close to St. Armands Circle." },
-        ],
-      },
-      {
-        label: "Shopping & Culture",
-        items: [
-          { name: "The Ringling", note: "Art museum, circus museum, and bayfront grounds." },
-          { name: "St. Armands Circle", note: "Boutique shopping across the causeway." },
-        ],
-      },
-      {
-        label: "Neighborhoods to Know",
-        items: [
-          { name: "Downtown Sarasota", note: "Galleries, theaters, and the bayfront." },
-          { name: "West of Trail", note: "Leafy, residential, minutes from Southside Village." },
-        ],
-      },
-      {
-        label: "StayHaus Picks",
-        items: [
-          { name: "Bayfront Park at dusk", note: "A quiet spot to watch the boats come in." },
         ],
       },
     ],

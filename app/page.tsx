@@ -119,7 +119,7 @@ export default function HomePage() {
         <SectionHeading
           eyebrow="Where We Stay"
           title="Florida's West Coast, and beyond"
-          description="StayHaus is currently based across four West Coast markets, with new Florida destinations joining the portfolio throughout the year."
+          description="StayHaus is currently based across three West Coast markets, with new Florida destinations joining the portfolio throughout the year."
         />
         <div className="mt-14 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
           {destinations.map((destination, i) => (

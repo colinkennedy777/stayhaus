@@ -66,7 +66,7 @@ export const properties: Property[] = [
   {
     slug: "the-sandbar-house",
     name: "The Sandbar House",
-    destinationSlug: "clearwater-beach",
+    destinationSlug: "gulf-beaches",
     neighborhood: "North Beach, Clearwater Beach",
     tagline: "Steps to the sand, built for slow mornings",
     description:
@@ -95,7 +95,7 @@ export const properties: Property[] = [
   {
     slug: "moonrise-cabana",
     name: "Moonrise Cabana",
-    destinationSlug: "clearwater-beach",
+    destinationSlug: "gulf-beaches",
     neighborhood: "South Beach, Clearwater Beach",
     tagline: "A single-story cabana with Gulf views",
     description:
@@ -120,64 +120,6 @@ export const properties: Property[] = [
     neighborhoodNotes:
       "South Beach offers a quieter stretch of Clearwater's shoreline, close to Sand Key Park and a short drive to the shops and restaurants of the main beach strip.",
     availability: "Limited availability — book 4+ weeks ahead for peak season.",
-  },
-  {
-    slug: "bayfront-modern",
-    name: "Bayfront Modern",
-    destinationSlug: "sarasota",
-    neighborhood: "Downtown Sarasota",
-    tagline: "A high-rise residence overlooking Sarasota Bay",
-    description:
-      "Bayfront Modern occupies the upper floor of a downtown Sarasota residence, with floor-to-ceiling glass framing views across the bay to the barrier islands. The interior favors quiet materials — plaster, white oak, and stone — with furnishings sourced from Florida and North Carolina studios.",
-    bedrooms: 2,
-    bathrooms: 2,
-    maxGuests: 4,
-    priceFrom: 340,
-    tags: ["Bay Views", "High-Rise", "Walk to Arts District"],
-    heroImage: "/images/properties/bayfront-modern/1.svg",
-    gallery: gallery("bayfront-modern", 5),
-    amenities: [
-      "Full kitchen",
-      "High-speed WiFi",
-      "In-unit washer & dryer",
-      "Building pool & fitness center",
-      "Reserved parking",
-      "Smart TV",
-      "Dedicated workspace",
-      "Keyless entry",
-    ],
-    neighborhoodNotes:
-      "Downtown Sarasota's arts district, Bayfront Park, and Marina Jack are all within walking distance, with St. Armands Circle a short drive across the causeway.",
-    availability: "Open availability — most stays booked 2–6 weeks in advance.",
-  },
-  {
-    slug: "the-grove-house",
-    name: "The Grove House",
-    destinationSlug: "sarasota",
-    neighborhood: "West of Trail, Sarasota",
-    tagline: "A garden bungalow beneath a banyan canopy",
-    description:
-      "The Grove House sits beneath a mature banyan canopy in Sarasota's West of Trail neighborhood, a quiet residential pocket close to Southside Village. The single-story bungalow has been opened up and restored with a soft, botanical palette, built around a screened lanai for evening dinners.",
-    bedrooms: 3,
-    bathrooms: 2,
-    maxGuests: 6,
-    priceFrom: 295,
-    tags: ["Screened Lanai", "Quiet Street", "Family-Friendly"],
-    heroImage: "/images/properties/the-grove-house/1.svg",
-    gallery: gallery("the-grove-house", 5),
-    amenities: [
-      "Full kitchen",
-      "High-speed WiFi",
-      "In-unit washer & dryer",
-      "Screened lanai",
-      "Private parking",
-      "Smart TVs",
-      "Keyless entry",
-      "Pet friendly",
-    ],
-    neighborhoodNotes:
-      "West of Trail is minutes from Southside Village's cafés and Sarasota's barrier-island beaches, with downtown a short drive north.",
-    availability: "Open availability — most stays booked 2–6 weeks in advance.",
   },
   {
     slug: "hyde-park-flat",

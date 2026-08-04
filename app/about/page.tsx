@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 };
 
 const stats = [
-  { value: "4", label: "Florida Markets" },
-  { value: "8", label: "Properties & Growing" },
+  { value: "3", label: "Florida Markets" },
+  { value: "6", label: "Properties & Growing" },
   { value: "100%", label: "Design-Reviewed Homes" },
   { value: "2026", label: "Founded" },
 ];

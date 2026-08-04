@@ -11,13 +11,13 @@ export const testimonials: Testimonial[] = [
     quote:
       "We've booked three StayHaus properties now and the standard is consistent every time. That's rare in this category.",
     author: "Daniel & Priya M.",
-    location: "Stayed in Sarasota & Tampa",
+    location: "Stayed in St. Petersburg & Tampa",
   },
   {
     quote:
       "The neighborhood guide alone made the trip better. We ate and explored like locals, not tourists.",
     author: "Jordan K.",
-    location: "Stayed in Clearwater Beach",
+    location: "Stayed in Gulf Beaches",
   },
   {
     quote:

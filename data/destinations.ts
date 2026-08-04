@@ -13,25 +13,14 @@ export const destinations: Destination[] = [
     propertyCount: 2,
   },
   {
-    slug: "clearwater-beach",
-    name: "Clearwater Beach",
+    slug: "gulf-beaches",
+    name: "Gulf Beaches",
     region: "Florida's West Coast",
     state: "active",
     tagline: "Powder sand, unhurried mornings",
     description:
-      "White-sand beach town living with sherbet sunsets and an easy, barefoot pace of life.",
-    image: "/images/destinations/clearwater-beach.jpg",
-    propertyCount: 2,
-  },
-  {
-    slug: "sarasota",
-    name: "Sarasota",
-    region: "Florida's West Coast",
-    state: "active",
-    tagline: "Arts, bayfront calm, quiet luxury",
-    description:
-      "Cultural institutions, barrier-island beaches, and a slower, design-forward way of living on the water.",
-    image: "/images/destinations/sarasota.svg",
+      "Clearwater Beach and the barrier islands along it — white sand, sherbet sunsets, and an easy, barefoot pace of life.",
+    image: "/images/destinations/gulf-beaches.jpg",
     propertyCount: 2,
   },
   {
@@ -44,6 +33,16 @@ export const destinations: Destination[] = [
       "Riverwalk views, historic Hyde Park charm, and a growing culinary scene in Florida's most dynamic city.",
     image: "/images/destinations/tampa.jpg",
     propertyCount: 2,
+  },
+  {
+    slug: "sarasota",
+    name: "Sarasota",
+    region: "Florida's West Coast",
+    state: "coming-soon",
+    tagline: "Coming soon",
+    description: "Arts, bayfront calm, and barrier-island beaches, arriving to the StayHaus portfolio soon.",
+    image: "/images/destinations/sarasota.svg",
+    propertyCount: 0,
   },
   {
     slug: "naples",
@@ -63,16 +62,6 @@ export const destinations: Destination[] = [
     tagline: "Coming soon",
     description: "Design-forward stays across Miami's most storied neighborhoods, arriving soon.",
     image: "/images/destinations/miami.svg",
-    propertyCount: 0,
-  },
-  {
-    slug: "orlando",
-    name: "Orlando",
-    region: "Central Florida",
-    state: "coming-soon",
-    tagline: "Coming soon",
-    description: "Central Florida living for the modern traveler, arriving to the StayHaus portfolio soon.",
-    image: "/images/destinations/orlando.svg",
     propertyCount: 0,
   },
 ];
