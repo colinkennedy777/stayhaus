@@ -43,7 +43,9 @@ npm run generate:images
 
 See `scripts/generate-placeholder-images.mjs`.
 
-**Before launch, replace these with real photography.** Nothing else needs to change — every reference is just a path string in `data/*.ts`, so swapping `/public/images/properties/the-kenwood-loft/1.svg` for a real `.jpg`/`.webp` at the same import path (or updating the path in the data file) is a drop-in replacement. `next.config.js` currently allows SVG through the image pipeline (`dangerouslyAllowSVG`) for the placeholders — safe to remove once everything is real photography.
+**Before launch, replace these with real photography.** Nothing else needs to change — every reference is just a path string in `data/*.ts`, so swapping `/public/images/properties/the-kenwood-loft/1.svg` for a real `.jpg`/`.webp` at the same import path (or updating the path in the data file) is a drop-in replacement.
+
+`next.config.js` currently sets `images.unoptimized: true`. That's there because Vercel's hosted image-optimization pipeline serves these generated SVGs as empty responses in production (a Vercel-specific difference from `next start` locally), so optimization is skipped entirely for now. **Once real photography replaces the placeholders, remove `unoptimized: true`** (and `dangerouslyAllowSVG`, no longer needed) to get responsive resizing and WebP conversion back.
 
 ## Forms
 
