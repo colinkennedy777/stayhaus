@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="900" viewBox="0 0 2000 900" role="img" aria-label="StayHaus placeholder imagery">
+  <defs>
+    <linearGradient id="bg-guidestpetersburg" gradientTransform="rotate(34 0.5 0.5)">
+      <stop offset="0%" stop-color="#F4EEE1" />
+      <stop offset="55%" stop-color="#C6B085" />
+      <stop offset="100%" stop-color="#A98A4D" />
+    </linearGradient>
+    <radialGradient id="glow-guidestpetersburg" cx="77.96501957345754%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#FFFDF8" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#FFFDF8" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor-guidestpetersburg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2E2716" stop-opacity="0" />
+      <stop offset="100%" stop-color="#2E2716" stop-opacity="0.4" />
+    </linearGradient>
+    <radialGradient id="vig-guidestpetersburg" cx="50%" cy="45%" r="75%">
+      <stop offset="60%" stop-color="#000000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.18" />
+    </radialGradient>
+    <filter id="grain-guidestpetersburg">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise" />
+      <feColorMatrix in="noise" type="saturate" values="0" />
+      <feComponentTransfer><feFuncA type="linear" slope="0.05" /></feComponentTransfer>
+      <feComposite operator="over" in2="SourceGraphic" />
+    </filter>
+  </defs>
+  <rect width="2000" height="900" fill="url(#bg-guidestpetersburg)" />
+  <rect width="2000" height="900" fill="url(#glow-guidestpetersburg)" />
+  
+      <g opacity="0.13" stroke="#4A3E22" stroke-width="2">
+        <line x1="240" y1="198" x2="1760" y2="153" /><line x1="240" y1="279" x2="1760" y2="234" /><line x1="240" y1="360" x2="1760" y2="315" /><line x1="240" y1="441" x2="1760" y2="396" /><line x1="240" y1="522" x2="1760" y2="477" /><line x1="240" y1="602.9999999999999" x2="1760" y2="557.9999999999999" />
+      </g>
+  <rect y="526.5648155054076" width="2000" height="373.43518449459236" fill="url(#floor-guidestpetersburg)" />
+  <rect width="2000" height="900" fill="url(#vig-guidestpetersburg)" />
+  <rect width="2000" height="900" filter="url(#grain-guidestpetersburg)" opacity="0.5" />
+</svg>

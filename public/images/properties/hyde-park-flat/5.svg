@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200" role="img" aria-label="StayHaus placeholder imagery">
+  <defs>
+    <linearGradient id="bg-propertyhydeparkflat5" gradientTransform="rotate(278 0.5 0.5)">
+      <stop offset="0%" stop-color="#EADFCF" />
+      <stop offset="55%" stop-color="#C2775A" />
+      <stop offset="100%" stop-color="#8B4830" />
+    </linearGradient>
+    <radialGradient id="glow-propertyhydeparkflat5" cx="40.161177003756166%" cy="36.07556838542224%" r="60%">
+      <stop offset="0%" stop-color="#FFFDF8" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#FFFDF8" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor-propertyhydeparkflat5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2E1B12" stop-opacity="0" />
+      <stop offset="100%" stop-color="#2E1B12" stop-opacity="0.4" />
+    </linearGradient>
+    <radialGradient id="vig-propertyhydeparkflat5" cx="50%" cy="45%" r="75%">
+      <stop offset="60%" stop-color="#000000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.18" />
+    </radialGradient>
+    <filter id="grain-propertyhydeparkflat5">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise" />
+      <feColorMatrix in="noise" type="saturate" values="0" />
+      <feComponentTransfer><feFuncA type="linear" slope="0.05" /></feComponentTransfer>
+      <feComposite operator="over" in2="SourceGraphic" />
+    </filter>
+  </defs>
+  <rect width="1600" height="1200" fill="url(#bg-propertyhydeparkflat5)" />
+  <rect width="1600" height="1200" fill="url(#glow-propertyhydeparkflat5)" />
+  
+      <g opacity="0.14" stroke="#4A2A1C" stroke-width="2" fill="none" stroke-linecap="round">
+        <path d="M 800 420 Q 996.1073774384583 180 1192.2147548769167 90.8927438404919" /><path d="M 800 420 Q 1040.5613109211927 180 1281.1226218423851 244.88568661725762" /><path d="M 800 420 Q 1056 180 1312 420" /><path d="M 800 420 Q 1040.5613109211927 180 1281.1226218423851 595.1143133827424" /><path d="M 800 420 Q 996.1073774384583 180 1192.2147548769167 749.1072561595081" />
+      </g>
+  <rect y="740.7536173593253" width="1600" height="459.2463826406747" fill="url(#floor-propertyhydeparkflat5)" />
+  <rect width="1600" height="1200" fill="url(#vig-propertyhydeparkflat5)" />
+  <rect width="1600" height="1200" filter="url(#grain-propertyhydeparkflat5)" opacity="0.5" />
+</svg>

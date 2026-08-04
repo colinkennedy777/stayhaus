@@ -1,0 +1,248 @@
+import { Property } from "./types";
+
+function gallery(slug: string, count: number) {
+  return Array.from({ length: count }, (_, i) => `/images/properties/${slug}/${i + 1}.svg`);
+}
+
+export const properties: Property[] = [
+  {
+    slug: "the-kenwood-loft",
+    name: "The Kenwood Loft",
+    destinationSlug: "st-petersburg",
+    neighborhood: "Historic Kenwood, St. Petersburg",
+    tagline: "A restored 1925 bungalow loft, steps from Central Avenue",
+    description:
+      "Set within a restored 1925 bungalow in St. Petersburg's Historic Kenwood district, The Kenwood Loft pairs original architectural detail with a considered, contemporary interior. Vaulted ceilings and warm oak floors sit alongside curated furnishings and local art, creating a stay that feels personal rather than staged. Central Avenue's galleries, coffee bars, and restaurants are a short walk away.",
+    bedrooms: 2,
+    bathrooms: 2,
+    maxGuests: 4,
+    priceFrom: 245,
+    tags: ["Walkable", "Historic District", "Design-Forward"],
+    heroImage: "/images/properties/the-kenwood-loft/1.svg",
+    gallery: gallery("the-kenwood-loft", 5),
+    amenities: [
+      "Full kitchen",
+      "High-speed WiFi",
+      "In-unit washer & dryer",
+      "Dedicated workspace",
+      "Smart TV",
+      "Private parking",
+      "Keyless entry",
+      "Premium linens",
+    ],
+    neighborhoodNotes:
+      "Historic Kenwood is one of St. Petersburg's original arts districts, a few minutes' walk from Central Avenue and ten minutes by bike to the downtown waterfront and St. Pete Pier.",
+    availability: "Open availability — most stays booked 2–6 weeks in advance.",
+  },
+  {
+    slug: "casa-coquina",
+    name: "Casa Coquina",
+    destinationSlug: "st-petersburg",
+    neighborhood: "Old Northeast, St. Petersburg",
+    tagline: "A light-filled coquina bungalow near the bay",
+    description:
+      "Casa Coquina occupies a coquina-stone bungalow in St. Petersburg's tree-lined Old Northeast neighborhood. Interiors lean warm and textural — limewashed walls, linen upholstery, and Florida-made ceramics throughout. A private courtyard offers a quiet place to start the morning before the short walk to the bay.",
+    bedrooms: 3,
+    bathrooms: 2,
+    maxGuests: 6,
+    priceFrom: 310,
+    tags: ["Private Courtyard", "Family-Friendly", "Near the Bay"],
+    heroImage: "/images/properties/casa-coquina/1.svg",
+    gallery: gallery("casa-coquina", 5),
+    amenities: [
+      "Full kitchen",
+      "High-speed WiFi",
+      "In-unit washer & dryer",
+      "Private courtyard",
+      "Smart TVs",
+      "Private parking",
+      "Keyless entry",
+      "Pet friendly",
+    ],
+    neighborhoodNotes:
+      "Old Northeast sits along Tampa Bay, known for its brick streets and mature oak canopy. Vinoy Park and the downtown waterfront are a ten-minute walk.",
+    availability: "Open availability — most stays booked 2–6 weeks in advance.",
+  },
+  {
+    slug: "the-sandbar-house",
+    name: "The Sandbar House",
+    destinationSlug: "clearwater-beach",
+    neighborhood: "North Beach, Clearwater Beach",
+    tagline: "Steps to the sand, built for slow mornings",
+    description:
+      "The Sandbar House sits two blocks from Clearwater's white-sand shoreline, designed as an unhurried retreat for guests who want the beach without the noise. Natural linen, whitewashed oak, and woven textures fill the interior, with an outdoor shower and shaded porch for the transition between sand and stay.",
+    bedrooms: 3,
+    bathrooms: 3,
+    maxGuests: 6,
+    priceFrom: 385,
+    tags: ["Steps to Beach", "Outdoor Shower", "Coastal"],
+    heroImage: "/images/properties/the-sandbar-house/1.svg",
+    gallery: gallery("the-sandbar-house", 5),
+    amenities: [
+      "Full kitchen",
+      "High-speed WiFi",
+      "In-unit washer & dryer",
+      "Outdoor shower",
+      "Private parking",
+      "Beach gear storage",
+      "Smart TVs",
+      "Keyless entry",
+    ],
+    neighborhoodNotes:
+      "North Beach is Clearwater's quieter shoreline, a short stroll from Pier 60 and the marina district with waterfront dining and sunset gatherings.",
+    availability: "Limited availability — book 4+ weeks ahead for peak season.",
+  },
+  {
+    slug: "moonrise-cabana",
+    name: "Moonrise Cabana",
+    destinationSlug: "clearwater-beach",
+    neighborhood: "South Beach, Clearwater Beach",
+    tagline: "A single-story cabana with Gulf views",
+    description:
+      "Moonrise Cabana is a single-story retreat facing the Gulf, reimagined with an airy, resort-minimal interior. Sliding glass doors open the living space to a private patio, framing the water from nearly every room. It's a compact, well-appointed stay built for couples and small groups.",
+    bedrooms: 1,
+    bathrooms: 1,
+    maxGuests: 2,
+    priceFrom: 265,
+    tags: ["Gulf Views", "Couples Retreat", "Ground Floor"],
+    heroImage: "/images/properties/moonrise-cabana/1.svg",
+    gallery: gallery("moonrise-cabana", 5),
+    amenities: [
+      "Full kitchen",
+      "High-speed WiFi",
+      "Private patio",
+      "Gulf views",
+      "Smart TV",
+      "Private parking",
+      "Keyless entry",
+      "Premium linens",
+    ],
+    neighborhoodNotes:
+      "South Beach offers a quieter stretch of Clearwater's shoreline, close to Sand Key Park and a short drive to the shops and restaurants of the main beach strip.",
+    availability: "Limited availability — book 4+ weeks ahead for peak season.",
+  },
+  {
+    slug: "bayfront-modern",
+    name: "Bayfront Modern",
+    destinationSlug: "sarasota",
+    neighborhood: "Downtown Sarasota",
+    tagline: "A high-rise residence overlooking Sarasota Bay",
+    description:
+      "Bayfront Modern occupies the upper floor of a downtown Sarasota residence, with floor-to-ceiling glass framing views across the bay to the barrier islands. The interior favors quiet materials — plaster, white oak, and stone — with furnishings sourced from Florida and North Carolina studios.",
+    bedrooms: 2,
+    bathrooms: 2,
+    maxGuests: 4,
+    priceFrom: 340,
+    tags: ["Bay Views", "High-Rise", "Walk to Arts District"],
+    heroImage: "/images/properties/bayfront-modern/1.svg",
+    gallery: gallery("bayfront-modern", 5),
+    amenities: [
+      "Full kitchen",
+      "High-speed WiFi",
+      "In-unit washer & dryer",
+      "Building pool & fitness center",
+      "Reserved parking",
+      "Smart TV",
+      "Dedicated workspace",
+      "Keyless entry",
+    ],
+    neighborhoodNotes:
+      "Downtown Sarasota's arts district, Bayfront Park, and Marina Jack are all within walking distance, with St. Armands Circle a short drive across the causeway.",
+    availability: "Open availability — most stays booked 2–6 weeks in advance.",
+  },
+  {
+    slug: "the-grove-house",
+    name: "The Grove House",
+    destinationSlug: "sarasota",
+    neighborhood: "West of Trail, Sarasota",
+    tagline: "A garden bungalow beneath a banyan canopy",
+    description:
+      "The Grove House sits beneath a mature banyan canopy in Sarasota's West of Trail neighborhood, a quiet residential pocket close to Southside Village. The single-story bungalow has been opened up and restored with a soft, botanical palette, built around a screened lanai for evening dinners.",
+    bedrooms: 3,
+    bathrooms: 2,
+    maxGuests: 6,
+    priceFrom: 295,
+    tags: ["Screened Lanai", "Quiet Street", "Family-Friendly"],
+    heroImage: "/images/properties/the-grove-house/1.svg",
+    gallery: gallery("the-grove-house", 5),
+    amenities: [
+      "Full kitchen",
+      "High-speed WiFi",
+      "In-unit washer & dryer",
+      "Screened lanai",
+      "Private parking",
+      "Smart TVs",
+      "Keyless entry",
+      "Pet friendly",
+    ],
+    neighborhoodNotes:
+      "West of Trail is minutes from Southside Village's cafés and Sarasota's barrier-island beaches, with downtown a short drive north.",
+    availability: "Open availability — most stays booked 2–6 weeks in advance.",
+  },
+  {
+    slug: "hyde-park-flat",
+    name: "Hyde Park Flat",
+    destinationSlug: "tampa",
+    neighborhood: "Hyde Park, Tampa",
+    tagline: "A historic Hyde Park residence, reimagined",
+    description:
+      "Hyde Park Flat occupies the ground floor of a century-old residence in Tampa's most storied neighborhood. High ceilings and original millwork are balanced by a restrained, contemporary interior, positioned an easy walk from Hyde Park Village and Bayshore Boulevard.",
+    bedrooms: 2,
+    bathrooms: 1,
+    maxGuests: 4,
+    priceFrom: 255,
+    tags: ["Historic District", "Walkable", "Ground Floor"],
+    heroImage: "/images/properties/hyde-park-flat/1.svg",
+    gallery: gallery("hyde-park-flat", 5),
+    amenities: [
+      "Full kitchen",
+      "High-speed WiFi",
+      "In-unit washer & dryer",
+      "Private parking",
+      "Smart TV",
+      "Dedicated workspace",
+      "Keyless entry",
+      "Premium linens",
+    ],
+    neighborhoodNotes:
+      "Hyde Park Village's shops and restaurants are a five-minute walk, with Bayshore Boulevard's waterfront path and downtown Tampa a short ride away.",
+    availability: "Open availability — most stays booked 2–6 weeks in advance.",
+  },
+  {
+    slug: "the-riverwalk-suite",
+    name: "The Riverwalk Suite",
+    destinationSlug: "tampa",
+    neighborhood: "Downtown Tampa",
+    tagline: "A modern high-rise suite along the Riverwalk",
+    description:
+      "The Riverwalk Suite sits within a downtown Tampa high-rise directly along the Hillsborough River, with expansive windows looking out over the water and skyline. The interior is composed and minimal, designed for both business travel and weekend stays, with the Tampa Riverwalk directly below.",
+    bedrooms: 1,
+    bathrooms: 1,
+    maxGuests: 2,
+    priceFrom: 225,
+    tags: ["River Views", "Downtown", "Business-Friendly"],
+    heroImage: "/images/properties/the-riverwalk-suite/1.svg",
+    gallery: gallery("the-riverwalk-suite", 5),
+    amenities: [
+      "Full kitchen",
+      "High-speed WiFi",
+      "Building pool & fitness center",
+      "Reserved parking",
+      "Smart TV",
+      "Dedicated workspace",
+      "Keyless entry",
+      "River views",
+    ],
+    neighborhoodNotes:
+      "Directly on the Tampa Riverwalk, minutes by foot from Sparkman Wharf, Water Street, and the Tampa Museum of Art.",
+    availability: "Open availability — most stays booked 2–6 weeks in advance.",
+  },
+];
+
+export function getProperty(slug: string) {
+  return properties.find((p) => p.slug === slug);
+}
+
+export function getPropertiesByDestination(destinationSlug: string) {
+  return properties.filter((p) => p.destinationSlug === destinationSlug);
+}

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-label="StayHaus placeholder imagery">
+  <defs>
+    <linearGradient id="bg-destinationclearwaterbeach" gradientTransform="rotate(197 0.5 0.5)">
+      <stop offset="0%" stop-color="#E9DFC9" />
+      <stop offset="55%" stop-color="#8B9070" />
+      <stop offset="100%" stop-color="#221F1B" />
+    </linearGradient>
+    <radialGradient id="glow-destinationclearwaterbeach" cx="85%" cy="12.511448719305921%" r="60%">
+      <stop offset="0%" stop-color="#FFFDF8" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#FFFDF8" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor-destinationclearwaterbeach" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#15130F" stop-opacity="0" />
+      <stop offset="100%" stop-color="#15130F" stop-opacity="0.4" />
+    </linearGradient>
+    <radialGradient id="vig-destinationclearwaterbeach" cx="50%" cy="45%" r="75%">
+      <stop offset="60%" stop-color="#000000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.18" />
+    </radialGradient>
+    <filter id="grain-destinationclearwaterbeach">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise" />
+      <feColorMatrix in="noise" type="saturate" values="0" />
+      <feComponentTransfer><feFuncA type="linear" slope="0.05" /></feComponentTransfer>
+      <feComposite operator="over" in2="SourceGraphic" />
+    </filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg-destinationclearwaterbeach)" />
+  <rect width="1600" height="1000" fill="url(#glow-destinationclearwaterbeach)" />
+  
+      <g opacity="0.14" stroke="#221F1B" stroke-width="2">
+        <line x1="800" y1="120" x2="800" y2="880" />
+        <line x1="288" y1="500" x2="1312" y2="500" />
+      </g>
+  <rect y="684.3361005047336" width="1600" height="315.6638994952664" fill="url(#floor-destinationclearwaterbeach)" />
+  <rect width="1600" height="1000" fill="url(#vig-destinationclearwaterbeach)" />
+  <rect width="1600" height="1000" filter="url(#grain-destinationclearwaterbeach)" opacity="0.5" />
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="StayHaus placeholder imagery">
+  <defs>
+    <linearGradient id="bg-ogcover" gradientTransform="rotate(223 0.5 0.5)">
+      <stop offset="0%" stop-color="#F4EEE1" />
+      <stop offset="55%" stop-color="#DACBA8" />
+      <stop offset="100%" stop-color="#AE5E3E" />
+    </linearGradient>
+    <radialGradient id="glow-ogcover" cx="15%" cy="17.527100169099867%" r="60%">
+      <stop offset="0%" stop-color="#FFFDF8" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#FFFDF8" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor-ogcover" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3A2E22" stop-opacity="0" />
+      <stop offset="100%" stop-color="#3A2E22" stop-opacity="0.4" />
+    </linearGradient>
+    <radialGradient id="vig-ogcover" cx="50%" cy="45%" r="75%">
+      <stop offset="60%" stop-color="#000000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.18" />
+    </radialGradient>
+    <filter id="grain-ogcover">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise" />
+      <feColorMatrix in="noise" type="saturate" values="0" />
+      <feComponentTransfer><feFuncA type="linear" slope="0.05" /></feComponentTransfer>
+      <feComposite operator="over" in2="SourceGraphic" />
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-ogcover)" />
+  <rect width="1200" height="630" fill="url(#glow-ogcover)" />
+  
+      <g opacity="0.15" stroke="#5A4632" stroke-width="2" fill="none">
+        <path d="M 0 332.1843737263698 Q 600 294.3843737263698 1200 332.1843737263698" />
+      </g>
+  <rect y="382.5843737263698" width="1200" height="247.4156262736302" fill="url(#floor-ogcover)" />
+  <rect width="1200" height="630" fill="url(#vig-ogcover)" />
+  <rect width="1200" height="630" filter="url(#grain-ogcover)" opacity="0.5" />
+</svg>

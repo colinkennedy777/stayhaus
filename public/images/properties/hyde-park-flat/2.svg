@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200" role="img" aria-label="StayHaus placeholder imagery">
+  <defs>
+    <linearGradient id="bg-propertyhydeparkflat2" gradientTransform="rotate(326 0.5 0.5)">
+      <stop offset="0%" stop-color="#F4EEE1" />
+      <stop offset="55%" stop-color="#DACBA8" />
+      <stop offset="100%" stop-color="#AE5E3E" />
+    </linearGradient>
+    <radialGradient id="glow-propertyhydeparkflat2" cx="15%" cy="8%" r="60%">
+      <stop offset="0%" stop-color="#FFFDF8" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#FFFDF8" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="floor-propertyhydeparkflat2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3A2E22" stop-opacity="0" />
+      <stop offset="100%" stop-color="#3A2E22" stop-opacity="0.4" />
+    </linearGradient>
+    <radialGradient id="vig-propertyhydeparkflat2" cx="50%" cy="45%" r="75%">
+      <stop offset="60%" stop-color="#000000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.18" />
+    </radialGradient>
+    <filter id="grain-propertyhydeparkflat2">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise" />
+      <feColorMatrix in="noise" type="saturate" values="0" />
+      <feComponentTransfer><feFuncA type="linear" slope="0.05" /></feComponentTransfer>
+      <feComposite operator="over" in2="SourceGraphic" />
+    </filter>
+  </defs>
+  <rect width="1600" height="1200" fill="url(#bg-propertyhydeparkflat2)" />
+  <rect width="1600" height="1200" fill="url(#glow-propertyhydeparkflat2)" />
+  
+      <g opacity="0.14" stroke="#5A4632" stroke-width="2">
+        <line x1="800" y1="144" x2="800" y2="1056" />
+        <line x1="288" y1="600" x2="1312" y2="600" />
+      </g>
+  <rect y="796.2670735549182" width="1600" height="403.73292644508183" fill="url(#floor-propertyhydeparkflat2)" />
+  <rect width="1600" height="1200" fill="url(#vig-propertyhydeparkflat2)" />
+  <rect width="1600" height="1200" filter="url(#grain-propertyhydeparkflat2)" opacity="0.5" />
+</svg>

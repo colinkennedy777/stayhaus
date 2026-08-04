@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #faf6ef;
+  color: #221f1b;
+}
+
+@layer utilities {
+  .eyebrow {
+    @apply text-[11px] sm:text-xs uppercase tracking-widest2 text-clay font-medium;
+  }
+
+  .container-page {
+    @apply mx-auto max-w-8xl px-5 sm:px-8 lg:px-12;
+  }
+
+  .link-underline {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .link-underline:hover {
+    background-size: 100% 1px;
+  }
+
+  .form-input {
+    @apply w-full border-0 border-b border-ink/20 bg-transparent py-2.5 text-[15px] text-ink placeholder:text-ink-soft/40 focus:border-clay focus:outline-none transition-colors duration-300;
+  }
+
+  .fade-mask-b {
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  }
+}
+
+::selection {
+  background-color: #ae5e3e;
+  color: #faf6ef;
+}
+
+/* Safety net: guarantee scroll-reveal content is visible for users (and
+   automated tools) with reduced-motion enabled, even if JS-level detection
+   races with the animation library's own viewport trigger. */
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* subtle grain overlay used across full-bleed photography */
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
