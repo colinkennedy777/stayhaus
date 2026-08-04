@@ -5,7 +5,7 @@ export const guides: Guide[] = [
     destinationSlug: "st-petersburg",
     intro:
       "St. Petersburg rewards a slow pace — gallery-hopping down Central Avenue, rooftop drinks at golden hour, and a bay-front walk before dinner.",
-    heroImage: "/images/guides/st-petersburg-hero.svg",
+    heroImage: "/images/destinations/st-petersburg.jpg",
     categories: [
       {
         label: "Restaurants",
@@ -63,7 +63,7 @@ export const guides: Guide[] = [
     destinationSlug: "clearwater-beach",
     intro:
       "Clearwater moves at the speed of the tide — long walks on powder-white sand, seafood by the marina, and sunsets that stop conversation.",
-    heroImage: "/images/guides/clearwater-beach-hero.svg",
+    heroImage: "/images/destinations/clearwater-beach.jpg",
     categories: [
       {
         label: "Restaurants",
@@ -173,7 +173,7 @@ export const guides: Guide[] = [
     destinationSlug: "tampa",
     intro:
       "Tampa is Florida's most dynamic city right now — historic neighborhoods, a rising food scene, and a skyline that keeps changing.",
-    heroImage: "/images/guides/tampa-hero.svg",
+    heroImage: "/images/destinations/tampa.jpg",
     categories: [
       {
         label: "Restaurants",

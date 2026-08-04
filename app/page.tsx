@@ -32,13 +32,23 @@ export default function HomePage() {
       />
       {/* Hero */}
       <section className="relative flex h-[100svh] min-h-[640px] items-end overflow-hidden">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/images/destinations/st-petersburg.jpg"
+          className="hero-video absolute inset-0 h-full w-full object-cover"
+        >
+          <source src="/videos/home-hero.mp4" type="video/mp4" />
+        </video>
         <Image
-          src="/images/home/hero.svg"
-          alt="A thoughtfully designed StayHaus property in Florida"
+          src="/images/destinations/st-petersburg.jpg"
+          alt="Sunset over the Sunshine Skyway Bridge, Tampa Bay"
           fill
           priority
           sizes="100vw"
-          className="object-cover"
+          className="hero-video-fallback object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/30 to-ink/10" />
         <div className="container-page relative z-10 pb-20 sm:pb-24">

@@ -9,7 +9,7 @@ export const destinations: Destination[] = [
     tagline: "Downtown energy, waterfront ease",
     description:
       "A walkable downtown of galleries, rooftop bars, and Tampa Bay sunsets, minutes from the Gulf beaches.",
-    image: "/images/destinations/st-petersburg.svg",
+    image: "/images/destinations/st-petersburg.jpg",
     propertyCount: 2,
   },
   {
@@ -20,7 +20,7 @@ export const destinations: Destination[] = [
     tagline: "Powder sand, unhurried mornings",
     description:
       "White-sand beach town living with sherbet sunsets and an easy, barefoot pace of life.",
-    image: "/images/destinations/clearwater-beach.svg",
+    image: "/images/destinations/clearwater-beach.jpg",
     propertyCount: 2,
   },
   {
@@ -42,7 +42,7 @@ export const destinations: Destination[] = [
     tagline: "Historic streets, modern skyline",
     description:
       "Riverwalk views, historic Hyde Park charm, and a growing culinary scene in Florida's most dynamic city.",
-    image: "/images/destinations/tampa.svg",
+    image: "/images/destinations/tampa.jpg",
     propertyCount: 2,
   },
   {

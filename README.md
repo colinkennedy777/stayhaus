@@ -33,9 +33,14 @@ Add an entry to the `properties` array in `data/properties.ts`. Every field is r
 
 Everything else — the Stays filter, the Explore index, the homepage destination grid, sitemap — reads from these files automatically. No page code needs to change to add a market.
 
-## Placeholder imagery
+## Imagery status
 
-External image CDNs weren't reachable from this build environment, so `public/images/` is populated with generated abstract, editorial-toned SVG placeholders (warm neutral palette, restrained architectural line motifs) rather than real photography. They're deterministic per filename — regenerate the full set any time with:
+A mix of real and placeholder right now, so it's obvious what still needs sourcing:
+
+- **Real photography**: the homepage hero (video, `public/videos/home-hero.mp4`, with `public/images/destinations/st-petersburg.jpg` as its poster/reduced-motion fallback), and the St. Petersburg, Clearwater Beach, and Tampa destination/guide hero images.
+- **Placeholder (generated SVG)**: everything else — all property galleries, the Sarasota destination/guide, the three "coming soon" destinations, and the About/Partner section imagery.
+
+External image CDNs weren't reachable from this build environment, so the placeholders in `public/images/` are generated abstract, editorial-toned SVGs (warm neutral palette, restrained architectural line motifs) rather than real photography. They're deterministic per filename — regenerate the full set any time with:
 
 ```bash
 npm run generate:images
