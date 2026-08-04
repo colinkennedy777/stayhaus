@@ -18,7 +18,7 @@ export function PropertyCard({ property, priority = false }: { property: Propert
           className="object-cover transition-transform duration-[1400ms] ease-smooth group-hover:scale-[1.06]"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink/25 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-        <span className="absolute left-4 top-4 rounded-full bg-cream/90 px-3 py-1 text-[11px] uppercase tracking-widest2 text-ink">
+        <span className="absolute left-4 top-4 rounded-full bg-powder/90 px-3 py-1 text-[11px] uppercase tracking-widest2 text-ink">
           {destination?.name}
         </span>
       </div>

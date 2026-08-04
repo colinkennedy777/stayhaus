@@ -7,13 +7,33 @@ html {
 }
 
 body {
-  background-color: #faf6ef;
-  color: #221f1b;
+  background-color: #f7f3ea;
+  color: #4a4b48;
 }
 
 @layer utilities {
+  /* Editorial "kicker" label: a short Powder Blue rule ahead of the text
+     keeps the brand color present on every section without using it as a
+     small-text color (it fails contrast on Warm Cream at body-text size). */
   .eyebrow {
-    @apply text-[11px] sm:text-xs uppercase tracking-widest2 text-clay font-medium;
+    @apply text-[11px] sm:text-xs uppercase tracking-widest2 text-clay font-medium inline-flex items-center gap-2;
+  }
+
+  .eyebrow::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    background-color: #8fb7c9;
+    flex-shrink: 0;
+  }
+
+  /* For eyebrows placed over dark or photographic backgrounds. Needs
+     !important: .eyebrow's own @apply'd color is emitted in the same
+     utilities layer as text-sand-*, and wins the cascade on source order
+     regardless of which class comes later in the element's className. */
+  .eyebrow-light {
+    color: #c7dce4 !important;
   }
 
   .container-page {
@@ -21,7 +41,7 @@ body {
   }
 
   .link-underline {
-    background-image: linear-gradient(currentColor, currentColor);
+    background-image: linear-gradient(#8fb7c9, #8fb7c9);
     background-position: 0 100%;
     background-repeat: no-repeat;
     background-size: 0% 1px;
@@ -43,8 +63,8 @@ body {
 }
 
 ::selection {
-  background-color: #ae5e3e;
-  color: #faf6ef;
+  background-color: #8fb7c9;
+  color: #4a4b48;
 }
 
 /* Safety net: guarantee scroll-reveal content is visible for users (and

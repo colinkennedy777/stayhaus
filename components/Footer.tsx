@@ -13,12 +13,12 @@ export function Footer() {
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-cream/60">
               {siteConfig.description}
             </p>
-            <p className="eyebrow mt-8 text-sand-300">Currently</p>
+            <p className="eyebrow eyebrow-light mt-8">Currently</p>
             <p className="mt-2 text-sm text-cream/70">{siteConfig.region} — expanding statewide.</p>
           </div>
 
           <div className="md:col-span-3">
-            <p className="eyebrow text-sand-300">Company</p>
+            <p className="eyebrow eyebrow-light">Company</p>
             <ul className="mt-5 space-y-3">
               {footerNav.company.map((item) => (
                 <li key={item.href}>
@@ -31,7 +31,7 @@ export function Footer() {
           </div>
 
           <div className="md:col-span-4">
-            <p className="eyebrow text-sand-300">Support</p>
+            <p className="eyebrow eyebrow-light">Support</p>
             <ul className="mt-5 grid grid-cols-2 gap-x-6 gap-y-3">
               {footerNav.support.map((item) => (
                 <li key={item.href}>

@@ -24,12 +24,14 @@ function seedFromString(str) {
   };
 }
 
+// StayHaus brand palette: Powder Blue #8FB7C9, Warm Cream #F7F3EA,
+// Mist #D5E1E3, Camel #B99D7B, Soft Charcoal #4A4B48.
 const PALETTES = [
-  { name: "sand", stops: ["#F4EEE1", "#DACBA8", "#AE5E3E"], line: "#5A4632", deep: "#3A2E22" },
-  { name: "sage", stops: ["#F2ECE0", "#B8BFA0", "#4F5340"], line: "#3A3D2E", deep: "#26281E" },
-  { name: "clay", stops: ["#EADFCF", "#C2775A", "#8B4830"], line: "#4A2A1C", deep: "#2E1B12" },
-  { name: "brass", stops: ["#F4EEE1", "#C6B085", "#A98A4D"], line: "#4A3E22", deep: "#2E2716" },
-  { name: "dusk", stops: ["#E9DFC9", "#8B9070", "#221F1B"], line: "#221F1B", deep: "#15130F" },
+  { name: "powder", stops: ["#F7F3EA", "#C7DCE4", "#8FB7C9"], line: "#4A4B48", deep: "#2E2F2C" },
+  { name: "mist", stops: ["#F7F3EA", "#D5E1E3", "#4F7A8C"], line: "#4A4B48", deep: "#2E2F2C" },
+  { name: "camel", stops: ["#EFE7D5", "#B99D7B", "#7D5F3E"], line: "#3A2E1E", deep: "#241C12" },
+  { name: "charcoal", stops: ["#D5E1E3", "#8FB7C9", "#4A4B48"], line: "#2E2F2C", deep: "#1E1F1C" },
+  { name: "dune", stops: ["#F7F3EA", "#D5E1E3", "#B99D7B"], line: "#4A4B48", deep: "#2E2F2C" },
 ];
 
 function paletteFor(seed) {

@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2000" viewBox="0 0 1600 2000" role="img" aria-label="StayHaus placeholder imagery">
   <defs>
     <linearGradient id="bg-homeintro" gradientTransform="rotate(277 0.5 0.5)">
-      <stop offset="0%" stop-color="#F4EEE1" />
-      <stop offset="55%" stop-color="#DACBA8" />
-      <stop offset="100%" stop-color="#AE5E3E" />
+      <stop offset="0%" stop-color="#F7F3EA" />
+      <stop offset="55%" stop-color="#C7DCE4" />
+      <stop offset="100%" stop-color="#8FB7C9" />
     </linearGradient>
     <radialGradient id="glow-homeintro" cx="15%" cy="24.30633479729295%" r="60%">
       <stop offset="0%" stop-color="#FFFDF8" stop-opacity="0.55" />
       <stop offset="100%" stop-color="#FFFDF8" stop-opacity="0" />
     </radialGradient>
     <linearGradient id="floor-homeintro" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#3A2E22" stop-opacity="0" />
-      <stop offset="100%" stop-color="#3A2E22" stop-opacity="0.4" />
+      <stop offset="0%" stop-color="#2E2F2C" stop-opacity="0" />
+      <stop offset="100%" stop-color="#2E2F2C" stop-opacity="0.4" />
     </linearGradient>
     <radialGradient id="vig-homeintro" cx="50%" cy="45%" r="75%">
       <stop offset="60%" stop-color="#000000" stop-opacity="0" />
@@ -27,7 +27,7 @@
   <rect width="1600" height="2000" fill="url(#bg-homeintro)" />
   <rect width="1600" height="2000" fill="url(#glow-homeintro)" />
   
-      <g opacity="0.14" stroke="#5A4632" stroke-width="2">
+      <g opacity="0.14" stroke="#4A4B48" stroke-width="2">
         <line x1="800" y1="240" x2="800" y2="1760" />
         <line x1="288" y1="1000" x2="1312" y2="1000" />
       </g>

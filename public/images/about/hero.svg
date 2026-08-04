@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1200" viewBox="0 0 2400 1200" role="img" aria-label="StayHaus placeholder imagery">
   <defs>
     <linearGradient id="bg-abouthero" gradientTransform="rotate(77 0.5 0.5)">
-      <stop offset="0%" stop-color="#F4EEE1" />
-      <stop offset="55%" stop-color="#C6B085" />
-      <stop offset="100%" stop-color="#A98A4D" />
+      <stop offset="0%" stop-color="#D5E1E3" />
+      <stop offset="55%" stop-color="#8FB7C9" />
+      <stop offset="100%" stop-color="#4A4B48" />
     </linearGradient>
     <radialGradient id="glow-abouthero" cx="68.20639783982188%" cy="15.45193877303973%" r="60%">
       <stop offset="0%" stop-color="#FFFDF8" stop-opacity="0.55" />
       <stop offset="100%" stop-color="#FFFDF8" stop-opacity="0" />
     </radialGradient>
     <linearGradient id="floor-abouthero" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#2E2716" stop-opacity="0" />
-      <stop offset="100%" stop-color="#2E2716" stop-opacity="0.4" />
+      <stop offset="0%" stop-color="#1E1F1C" stop-opacity="0" />
+      <stop offset="100%" stop-color="#1E1F1C" stop-opacity="0.4" />
     </linearGradient>
     <radialGradient id="vig-abouthero" cx="50%" cy="45%" r="75%">
       <stop offset="60%" stop-color="#000000" stop-opacity="0" />
@@ -27,7 +27,7 @@
   <rect width="2400" height="1200" fill="url(#bg-abouthero)" />
   <rect width="2400" height="1200" fill="url(#glow-abouthero)" />
   
-      <g opacity="0.14" stroke="#4A3E22" stroke-width="2" fill="none" stroke-linecap="round">
+      <g opacity="0.14" stroke="#2E2F2C" stroke-width="2" fill="none" stroke-linecap="round">
         <path d="M 1200 420 Q 1494.1610661576876 180 1788.3221323153753 -73.66088423926215" /><path d="M 1200 420 Q 1560.8419663817888 180 1921.6839327635776 157.32852992588641" /><path d="M 1200 420 Q 1584 180 1968 420" /><path d="M 1200 420 Q 1560.8419663817888 180 1921.6839327635776 682.6714700741136" /><path d="M 1200 420 Q 1494.1610661576876 180 1788.3221323153753 913.6608842392621" />
       </g>
   <rect y="827.9026155397296" width="2400" height="372.0973844602704" fill="url(#floor-abouthero)" />

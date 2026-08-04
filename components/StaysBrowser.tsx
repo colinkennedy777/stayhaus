@@ -71,7 +71,7 @@ function FilterPill({
       onClick={onClick}
       className={cn(
         "rounded-full border px-5 py-2 text-[13px] uppercase tracking-widest2 transition-colors duration-300",
-        active ? "border-ink bg-ink text-cream" : "border-ink/20 text-ink-soft/70 hover:border-ink/60"
+        active ? "border-powder bg-powder text-ink" : "border-ink/20 text-ink-soft/70 hover:border-ink/60"
       )}
     >
       {children}

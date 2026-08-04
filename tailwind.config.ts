@@ -14,33 +14,46 @@ const config: Config = {
     },
     extend: {
       colors: {
+        // Soft Charcoal — typography, and the site's one dark surface.
         ink: {
-          DEFAULT: "#221F1B",
-          soft: "#3A362F",
+          DEFAULT: "#4A4B48",
+          soft: "#63645F",
         },
+        // Warm Cream — main background.
         cream: {
-          DEFAULT: "#FAF6EF",
-          dim: "#F2ECE0",
+          DEFAULT: "#F7F3EA",
+          dim: "#EFE7D5",
         },
+        // Mist (100/200) is the secondary-background family; 300 is Powder
+        // Blue reused specifically as light-on-dark label text, where its
+        // contrast holds up (see components/Footer, PartnerCTA, PageHero).
         sand: {
-          50: "#FBF8F2",
-          100: "#F4EEE1",
-          200: "#E9DFC9",
-          300: "#DACBA8",
-          400: "#C6B085",
-          500: "#B0966A",
+          50: "#FBFCFC",
+          100: "#D5E1E3",
+          200: "#B9CDD1",
+          300: "#8FB7C9",
+          400: "#6B94A5",
+          500: "#4F7A8C",
         },
+        // A deepened, accessible heritage tone carrying Camel's warmth —
+        // used anywhere Camel needs to function as legible small text
+        // (eyebrows, links, marks) against Warm Cream. `light` is the true
+        // Camel swatch, reserved for non-text accents (borders, dividers).
         clay: {
-          DEFAULT: "#AE5E3E",
-          light: "#C2775A",
-          dark: "#8B4830",
+          DEFAULT: "#7D5F3E",
+          light: "#B99D7B",
+          dark: "#5C4730",
         },
-        sage: {
-          DEFAULT: "#6E7255",
-          light: "#8B9070",
-          dark: "#4F5340",
+        // Powder Blue — the recognizable StayHaus brand color. Used for
+        // surfaces, badges, active/hover states and rules rather than as a
+        // small-text color, since it doesn't clear text-contrast on Cream.
+        powder: {
+          DEFAULT: "#8FB7C9",
+          deep: "#4F7A8C",
+          light: "#C7DCE4",
         },
-        brass: "#A98A4D",
+        // True Camel, named directly for new component work.
+        camel: "#B99D7B",
       },
       fontFamily: {
         display: ["var(--font-fraunces)", "Georgia", "serif"],

@@ -42,7 +42,7 @@ export default function HomePage() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/30 to-ink/10" />
         <div className="container-page relative z-10 pb-20 sm:pb-24">
-          <p className="eyebrow text-sand-200 mb-6">Florida&rsquo;s West Coast &middot; Expanding Statewide</p>
+          <p className="eyebrow eyebrow-light mb-6">Florida&rsquo;s West Coast &middot; Expanding Statewide</p>
           <h1 className="font-display text-5xl sm:text-6xl md:text-7xl leading-[1.02] tracking-tight text-cream max-w-3xl">
             Stay somewhere designed to feel like it&rsquo;s yours.
           </h1>
@@ -132,9 +132,7 @@ export default function HomePage() {
             light
             className="mb-16"
           />
-          <div className="[&_p]:text-cream/70 [&_h3]:text-cream">
-            <Differentiators />
-          </div>
+          <Differentiators />
         </div>
       </section>
 

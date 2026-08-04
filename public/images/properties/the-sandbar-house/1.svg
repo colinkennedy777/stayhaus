@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200" role="img" aria-label="StayHaus placeholder imagery">
   <defs>
     <linearGradient id="bg-propertythesandbarhouse1" gradientTransform="rotate(162 0.5 0.5)">
-      <stop offset="0%" stop-color="#E9DFC9" />
-      <stop offset="55%" stop-color="#8B9070" />
-      <stop offset="100%" stop-color="#221F1B" />
+      <stop offset="0%" stop-color="#F7F3EA" />
+      <stop offset="55%" stop-color="#D5E1E3" />
+      <stop offset="100%" stop-color="#B99D7B" />
     </linearGradient>
     <radialGradient id="glow-propertythesandbarhouse1" cx="85%" cy="8%" r="60%">
       <stop offset="0%" stop-color="#FFFDF8" stop-opacity="0.55" />
       <stop offset="100%" stop-color="#FFFDF8" stop-opacity="0" />
     </radialGradient>
     <linearGradient id="floor-propertythesandbarhouse1" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#15130F" stop-opacity="0" />
-      <stop offset="100%" stop-color="#15130F" stop-opacity="0.4" />
+      <stop offset="0%" stop-color="#2E2F2C" stop-opacity="0" />
+      <stop offset="100%" stop-color="#2E2F2C" stop-opacity="0.4" />
     </linearGradient>
     <radialGradient id="vig-propertythesandbarhouse1" cx="50%" cy="45%" r="75%">
       <stop offset="60%" stop-color="#000000" stop-opacity="0" />
@@ -27,7 +27,7 @@
   <rect width="1600" height="1200" fill="url(#bg-propertythesandbarhouse1)" />
   <rect width="1600" height="1200" fill="url(#glow-propertythesandbarhouse1)" />
   
-      <g opacity="0.15" stroke="#221F1B" stroke-width="2" fill="none">
+      <g opacity="0.15" stroke="#4A4B48" stroke-width="2" fill="none">
         <path d="M 0 644.2910930570215 Q 800 572.2910930570215 1600 644.2910930570215" />
       </g>
   <rect y="740.2910930570215" width="1600" height="459.7089069429785" fill="url(#floor-propertythesandbarhouse1)" />

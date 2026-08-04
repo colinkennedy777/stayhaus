@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200" role="img" aria-label="StayHaus placeholder imagery">
   <defs>
     <linearGradient id="bg-propertybayfrontmodern3" gradientTransform="rotate(86 0.5 0.5)">
-      <stop offset="0%" stop-color="#F2ECE0" />
-      <stop offset="55%" stop-color="#B8BFA0" />
-      <stop offset="100%" stop-color="#4F5340" />
+      <stop offset="0%" stop-color="#F7F3EA" />
+      <stop offset="55%" stop-color="#D5E1E3" />
+      <stop offset="100%" stop-color="#4F7A8C" />
     </linearGradient>
     <radialGradient id="glow-propertybayfrontmodern3" cx="37.89245111402124%" cy="44.64092124020681%" r="60%">
       <stop offset="0%" stop-color="#FFFDF8" stop-opacity="0.55" />
       <stop offset="100%" stop-color="#FFFDF8" stop-opacity="0" />
     </radialGradient>
     <linearGradient id="floor-propertybayfrontmodern3" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#26281E" stop-opacity="0" />
-      <stop offset="100%" stop-color="#26281E" stop-opacity="0.4" />
+      <stop offset="0%" stop-color="#2E2F2C" stop-opacity="0" />
+      <stop offset="100%" stop-color="#2E2F2C" stop-opacity="0.4" />
     </linearGradient>
     <radialGradient id="vig-propertybayfrontmodern3" cx="50%" cy="45%" r="75%">
       <stop offset="60%" stop-color="#000000" stop-opacity="0" />
@@ -27,7 +27,7 @@
   <rect width="1600" height="1200" fill="url(#bg-propertybayfrontmodern3)" />
   <rect width="1600" height="1200" fill="url(#glow-propertybayfrontmodern3)" />
   
-      <g opacity="0.15" stroke="#3A3D2E" stroke-width="2" fill="none">
+      <g opacity="0.15" stroke="#4A4B48" stroke-width="2" fill="none">
         <path d="M 0 749.0975691955537 Q 800 677.0975691955537 1600 749.0975691955537" />
       </g>
   <rect y="845.0975691955537" width="1600" height="354.90243080444634" fill="url(#floor-propertybayfrontmodern3)" />

@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200" role="img" aria-label="StayHaus placeholder imagery">
   <defs>
     <linearGradient id="bg-propertymoonrisecabana4" gradientTransform="rotate(121 0.5 0.5)">
-      <stop offset="0%" stop-color="#EADFCF" />
-      <stop offset="55%" stop-color="#C2775A" />
-      <stop offset="100%" stop-color="#8B4830" />
+      <stop offset="0%" stop-color="#EFE7D5" />
+      <stop offset="55%" stop-color="#B99D7B" />
+      <stop offset="100%" stop-color="#7D5F3E" />
     </linearGradient>
     <radialGradient id="glow-propertymoonrisecabana4" cx="58.36099376901984%" cy="31.231816115323458%" r="60%">
       <stop offset="0%" stop-color="#FFFDF8" stop-opacity="0.55" />
       <stop offset="100%" stop-color="#FFFDF8" stop-opacity="0" />
     </radialGradient>
     <linearGradient id="floor-propertymoonrisecabana4" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#2E1B12" stop-opacity="0" />
-      <stop offset="100%" stop-color="#2E1B12" stop-opacity="0.4" />
+      <stop offset="0%" stop-color="#241C12" stop-opacity="0" />
+      <stop offset="100%" stop-color="#241C12" stop-opacity="0.4" />
     </linearGradient>
     <radialGradient id="vig-propertymoonrisecabana4" cx="50%" cy="45%" r="75%">
       <stop offset="60%" stop-color="#000000" stop-opacity="0" />
@@ -27,7 +27,7 @@
   <rect width="1600" height="1200" fill="url(#bg-propertymoonrisecabana4)" />
   <rect width="1600" height="1200" fill="url(#glow-propertymoonrisecabana4)" />
   
-      <g opacity="0.14" stroke="#4A2A1C" stroke-width="2" fill="none" stroke-linecap="round">
+      <g opacity="0.14" stroke="#3A2E1E" stroke-width="2" fill="none" stroke-linecap="round">
         <path d="M 800 420 Q 996.1073774384583 180 1192.2147548769167 90.8927438404919" /><path d="M 800 420 Q 1040.5613109211927 180 1281.1226218423851 244.88568661725762" /><path d="M 800 420 Q 1056 180 1312 420" /><path d="M 800 420 Q 1040.5613109211927 180 1281.1226218423851 595.1143133827424" /><path d="M 800 420 Q 996.1073774384583 180 1192.2147548769167 749.1072561595081" />
       </g>
   <rect y="836.4407872315496" width="1600" height="363.5592127684504" fill="url(#floor-propertymoonrisecabana4)" />

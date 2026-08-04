@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1200" viewBox="0 0 2400 1200" role="img" aria-label="StayHaus placeholder imagery">
   <defs>
     <linearGradient id="bg-partnerhero" gradientTransform="rotate(61 0.5 0.5)">
-      <stop offset="0%" stop-color="#E9DFC9" />
-      <stop offset="55%" stop-color="#8B9070" />
-      <stop offset="100%" stop-color="#221F1B" />
+      <stop offset="0%" stop-color="#F7F3EA" />
+      <stop offset="55%" stop-color="#D5E1E3" />
+      <stop offset="100%" stop-color="#B99D7B" />
     </linearGradient>
     <radialGradient id="glow-partnerhero" cx="85%" cy="8%" r="60%">
       <stop offset="0%" stop-color="#FFFDF8" stop-opacity="0.55" />
       <stop offset="100%" stop-color="#FFFDF8" stop-opacity="0" />
     </radialGradient>
     <linearGradient id="floor-partnerhero" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#15130F" stop-opacity="0" />
-      <stop offset="100%" stop-color="#15130F" stop-opacity="0.4" />
+      <stop offset="0%" stop-color="#2E2F2C" stop-opacity="0" />
+      <stop offset="100%" stop-color="#2E2F2C" stop-opacity="0.4" />
     </linearGradient>
     <radialGradient id="vig-partnerhero" cx="50%" cy="45%" r="75%">
       <stop offset="60%" stop-color="#000000" stop-opacity="0" />
@@ -27,7 +27,7 @@
   <rect width="2400" height="1200" fill="url(#bg-partnerhero)" />
   <rect width="2400" height="1200" fill="url(#glow-partnerhero)" />
   
-      <g opacity="0.13" stroke="#221F1B" stroke-width="2">
+      <g opacity="0.13" stroke="#4A4B48" stroke-width="2">
         <line x1="288" y1="264" x2="2112" y2="204" /><line x1="288" y1="372" x2="2112" y2="312" /><line x1="288" y1="480" x2="2112" y2="420" /><line x1="288" y1="588" x2="2112" y2="528" /><line x1="288" y1="696" x2="2112" y2="636" /><line x1="288" y1="803.9999999999999" x2="2112" y2="743.9999999999999" />
       </g>
   <rect y="775.7119543198496" width="2400" height="424.2880456801504" fill="url(#floor-partnerhero)" />

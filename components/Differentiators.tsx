@@ -28,9 +28,9 @@ export function Differentiators() {
     <div className="grid grid-cols-1 gap-x-10 gap-y-14 sm:grid-cols-2">
       {items.map((item, i) => (
         <Reveal key={item.index} delay={(i % 2) * 0.1}>
-          <p className="font-display text-2xl text-clay">{item.index}</p>
-          <h3 className="mt-4 font-display text-xl text-ink">{item.title}</h3>
-          <p className="mt-3 text-[15px] leading-relaxed text-ink-soft/70 max-w-sm">{item.description}</p>
+          <p className="font-display text-2xl text-powder">{item.index}</p>
+          <h3 className="mt-4 font-display text-xl text-cream">{item.title}</h3>
+          <p className="mt-3 text-[15px] leading-relaxed text-cream/70 max-w-sm">{item.description}</p>
         </Reveal>
       ))}
     </div>

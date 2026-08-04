@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200" role="img" aria-label="StayHaus placeholder imagery">
   <defs>
     <linearGradient id="bg-propertythegrovehouse5" gradientTransform="rotate(11 0.5 0.5)">
-      <stop offset="0%" stop-color="#F4EEE1" />
-      <stop offset="55%" stop-color="#C6B085" />
-      <stop offset="100%" stop-color="#A98A4D" />
+      <stop offset="0%" stop-color="#D5E1E3" />
+      <stop offset="55%" stop-color="#8FB7C9" />
+      <stop offset="100%" stop-color="#4A4B48" />
     </linearGradient>
     <radialGradient id="glow-propertythegrovehouse5" cx="72.3268399713561%" cy="36.67998856632039%" r="60%">
       <stop offset="0%" stop-color="#FFFDF8" stop-opacity="0.55" />
       <stop offset="100%" stop-color="#FFFDF8" stop-opacity="0" />
     </radialGradient>
     <linearGradient id="floor-propertythegrovehouse5" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#2E2716" stop-opacity="0" />
-      <stop offset="100%" stop-color="#2E2716" stop-opacity="0.4" />
+      <stop offset="0%" stop-color="#1E1F1C" stop-opacity="0" />
+      <stop offset="100%" stop-color="#1E1F1C" stop-opacity="0.4" />
     </linearGradient>
     <radialGradient id="vig-propertythegrovehouse5" cx="50%" cy="45%" r="75%">
       <stop offset="60%" stop-color="#000000" stop-opacity="0" />
@@ -27,7 +27,7 @@
   <rect width="1600" height="1200" fill="url(#bg-propertythegrovehouse5)" />
   <rect width="1600" height="1200" fill="url(#glow-propertythegrovehouse5)" />
   
-      <g opacity="0.16" stroke="#4A3E22" stroke-width="2" fill="none">
+      <g opacity="0.16" stroke="#2E2F2C" stroke-width="2" fill="none">
         <path d="M 512 1200 L 512 600 A 288 288 0 0 1 1088 600 L 1088 1200" />
       </g>
   <rect y="742.3765261452644" width="1600" height="457.6234738547356" fill="url(#floor-propertythegrovehouse5)" />

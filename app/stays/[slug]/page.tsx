@@ -73,7 +73,7 @@ export default async function PropertyPage({ params }: Props) {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/15 to-ink/5" />
         <div className="container-page relative z-10 pb-16 sm:pb-20">
-          <Link href={`/stays?location=${property.destinationSlug}`} className="eyebrow text-sand-200 mb-4 inline-block link-underline">
+          <Link href={`/stays?location=${property.destinationSlug}`} className="eyebrow eyebrow-light mb-4 inline-block link-underline">
             {destination?.name}
           </Link>
           <h1 className="font-display text-4xl sm:text-5xl md:text-6xl leading-[1.05] text-cream max-w-2xl">
