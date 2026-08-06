@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { Reveal } from "@/components/Reveal";
 
 const items = [
@@ -32,11 +35,30 @@ export function Differentiators() {
           delay={(i % 2) * 0.1}
           className={i % 2 === 1 ? "sm:mt-16" : undefined}
         >
-          <p className="font-display italic font-light text-6xl sm:text-7xl text-powder leading-none">
-            {item.index}
-          </p>
-          <h3 className="mt-6 font-display text-2xl text-cream">{item.title}</h3>
-          <p className="mt-3 text-[15px] leading-relaxed text-cream/70 max-w-sm">{item.description}</p>
+          <motion.div
+            className="group cursor-default"
+            initial="rest"
+            whileHover="hover"
+            animate="rest"
+          >
+            <motion.p
+              variants={{ rest: { x: 0, color: "#7DD6EA" }, hover: { x: 10, color: "#F7F3EA" } }}
+              transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+              className="font-display italic font-light text-6xl sm:text-7xl leading-none"
+            >
+              {item.index}
+            </motion.p>
+            <h3 className="mt-6 inline-block font-display text-2xl text-cream">
+              {item.title}
+              <motion.span
+                variants={{ rest: { scaleX: 0 }, hover: { scaleX: 1 } }}
+                transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+                style={{ transformOrigin: "left" }}
+                className="mt-1 block h-px bg-powder"
+              />
+            </h3>
+            <p className="mt-3 text-[15px] leading-relaxed text-cream/70 max-w-sm">{item.description}</p>
+          </motion.div>
         </Reveal>
       ))}
     </div>
