@@ -85,17 +85,6 @@ body {
   .caption {
     @apply text-xs text-ink-soft/55;
   }
-
-  /* Horizontal-scroll rows (Where We Cover) keep the native scroll
-     interaction but hide the scrollbar chrome across browsers. */
-  .scrollbar-hide {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-
-  .scrollbar-hide::-webkit-scrollbar {
-    display: none;
-  }
 }
 
 /* First-letter drop cap for longform feature copy. Plain CSS (not @apply)

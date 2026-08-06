@@ -8,7 +8,7 @@ import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { PartnerCTA } from "@/components/PartnerCTA";
 import { JsonLd } from "@/components/JsonLd";
 import { getProperty } from "@/data/properties";
-import { destinations, activeDestinations } from "@/data/destinations";
+import { activeDestinations, comingSoonDestinations } from "@/data/destinations";
 import { guides } from "@/data/guides";
 import { testimonials } from "@/data/testimonials";
 import { siteConfig } from "@/lib/site";
@@ -212,59 +212,68 @@ export default function HomePage() {
           </Reveal>
         </div>
 
-        <div className="mt-12 -mx-5 flex gap-6 overflow-x-auto px-5 pb-4 scrollbar-hide snap-x snap-mandatory sm:-mx-8 sm:gap-8 sm:px-8 lg:-mx-12 lg:px-12">
-          {destinations.map((destination, i) => {
-            const disabled = destination.state === "coming-soon";
-            const category = destinationCategories[destination.slug];
-            const card = (
-              <div className="group relative w-[260px] shrink-0 snap-start sm:w-[300px]">
-                <div className="relative aspect-[4/5] overflow-hidden">
-                  <Image
-                    src={destination.image}
-                    alt={destination.name}
-                    fill
-                    sizes="(min-width: 640px) 300px, 260px"
-                    className={cn(
-                      "object-cover transition-transform duration-[1400ms] ease-smooth",
-                      !disabled && "group-hover:scale-[1.06]",
-                      disabled && "grayscale-[35%] opacity-80"
-                    )}
-                  />
-                  {disabled && (
-                    <span className="absolute left-4 top-4 rounded-full border border-cream/50 bg-ink/40 px-3 py-1 text-[10px] uppercase tracking-widest2 text-cream backdrop-blur-sm">
-                      Coming Soon
-                    </span>
-                  )}
-                </div>
-                {category && (
-                  <p className="mt-4 text-[10px] uppercase tracking-widest2 text-powder-deep font-medium">
-                    {category}
-                  </p>
-                )}
-                <h3 className="mt-2 font-display text-2xl text-ink">
-                  <span
-                    className={cn(
-                      !disabled &&
-                        "bg-[linear-gradient(currentColor,currentColor)] bg-no-repeat bg-[length:0%_1px] bg-[position:0_100%] transition-[background-size] duration-500 ease-smooth group-hover:bg-[length:100%_1px]"
-                    )}
-                  >
-                    {destination.name}
-                  </span>
-                </h3>
-                <p className="mt-2 text-sm text-ink-soft/70 leading-relaxed">{destination.tagline}</p>
-              </div>
-            );
-
-            return (
-              <Reveal key={destination.slug} delay={(i % 3) * 0.06} className="shrink-0">
-                {disabled ? card : (
+        <div className="container-page">
+          <div className="mt-12 grid grid-cols-1 gap-10 sm:grid-cols-3 sm:gap-8">
+            {activeDestinations.map((destination, i) => {
+              const category = destinationCategories[destination.slug];
+              return (
+                <Reveal key={destination.slug} delay={i * 0.08}>
                   <Link href={`/stays?location=${destination.slug}`} className="group block">
-                    {card}
+                    <div className="relative aspect-[4/5] overflow-hidden">
+                      <Image
+                        src={destination.image}
+                        alt={destination.name}
+                        fill
+                        sizes="(min-width: 640px) 33vw, 100vw"
+                        className="object-cover transition-transform duration-[1400ms] ease-smooth group-hover:scale-[1.06]"
+                      />
+                    </div>
+                    {category && (
+                      <p className="mt-5 text-[10px] uppercase tracking-widest2 text-powder-deep font-medium">
+                        {category}
+                      </p>
+                    )}
+                    <h3 className="mt-2 font-display text-3xl sm:text-4xl text-ink">
+                      <span className="bg-[linear-gradient(currentColor,currentColor)] bg-no-repeat bg-[length:0%_1px] bg-[position:0_100%] transition-[background-size] duration-500 ease-smooth group-hover:bg-[length:100%_1px]">
+                        {destination.name}
+                      </span>
+                    </h3>
+                    <p className="mt-2 max-w-xs text-ink-soft/70 leading-relaxed">{destination.tagline}</p>
                   </Link>
-                )}
-              </Reveal>
-            );
-          })}
+                </Reveal>
+              );
+            })}
+          </div>
+
+          <div className="mt-14 grid grid-cols-3 gap-4 border-t border-ink/10 pt-10 sm:gap-8">
+            {comingSoonDestinations.map((destination, i) => {
+              const category = destinationCategories[destination.slug];
+              return (
+                <Reveal key={destination.slug} delay={i * 0.06}>
+                  <div className="group relative">
+                    <div className="relative aspect-[4/3] overflow-hidden">
+                      <Image
+                        src={destination.image}
+                        alt={destination.name}
+                        fill
+                        sizes="(min-width: 640px) 20vw, 33vw"
+                        className="object-cover grayscale-[35%] opacity-80"
+                      />
+                      <span className="absolute left-2 top-2 whitespace-nowrap rounded-full border border-cream/50 bg-ink/40 px-2 py-0.5 text-[7px] uppercase tracking-widest2 text-cream backdrop-blur-sm sm:left-3 sm:top-3 sm:px-2.5 sm:py-1 sm:text-[9px]">
+                        Coming Soon
+                      </span>
+                    </div>
+                    {category && (
+                      <p className="mt-3 text-[9px] uppercase tracking-widest2 text-powder-deep font-medium">
+                        {category}
+                      </p>
+                    )}
+                    <h4 className="mt-1 font-display text-lg sm:text-xl text-ink">{destination.name}</h4>
+                  </div>
+                </Reveal>
+              );
+            })}
+          </div>
         </div>
       </section>
 
