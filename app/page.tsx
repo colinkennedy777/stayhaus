@@ -127,19 +127,19 @@ export default function HomePage() {
           </Reveal>
 
           <Reveal className="lg:col-span-4 lg:col-start-9 relative lg:mt-16" delay={0.15}>
-            <div className="relative aspect-[4/5] overflow-hidden">
+            <div className="relative aspect-[3/2] overflow-hidden bg-sand-100">
               <Image
-                src="/images/home/intro.svg"
-                alt="Interior of a StayHaus property"
+                src="/images/home/philosophy.jpg"
+                alt="A StayHaus guest at ease in a thoughtfully designed living room"
                 fill
                 sizes="(min-width: 1024px) 32vw, 100vw"
-                className="object-cover"
+                className="object-contain"
               />
             </div>
-            <div className="relative -mt-4 ml-4 max-w-[240px] border border-ink/10 bg-cream p-5 sm:absolute sm:-bottom-10 sm:-left-10 sm:mt-0 sm:ml-0 sm:shadow-xl">
-              <p className="caption text-ink">Historic Kenwood, St. Petersburg</p>
+            <div className="max-w-[280px] border border-ink/10 bg-cream p-5 mt-6">
+              <p className="caption text-ink">The StayHaus standard, in every room.</p>
               <p className="mt-1 text-xs text-ink-soft/50">
-                One of six interiors, each designed in-house.
+                Designed to feel like it was always yours.
               </p>
             </div>
           </Reveal>
