@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import { Reveal } from "@/components/Reveal";
 
 const items = [
@@ -28,33 +25,22 @@ const items = [
 
 export function Differentiators() {
   return (
-    <div className="grid grid-cols-2 border-l border-t border-cream/15 lg:grid-cols-4">
+    <div className="grid grid-cols-2 gap-4 sm:gap-5 lg:grid-cols-4 lg:gap-6">
       {items.map((item, i) => (
-        <Reveal key={item.index} delay={i * 0.06} className="border-b border-r border-cream/15">
-          <motion.div
-            className="group h-full cursor-default px-5 py-8 sm:px-6 sm:py-10"
-            initial="rest"
-            whileHover="hover"
-            animate="rest"
-          >
-            <motion.p
-              variants={{ rest: { color: "#7DD6EA" }, hover: { color: "#F7F3EA" } }}
-              transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-              className="font-display italic font-light text-2xl leading-none"
-            >
-              {item.index}
-            </motion.p>
-            <h3 className="mt-4 inline-block font-display text-lg sm:text-xl text-cream">
-              {item.title}
-              <motion.span
-                variants={{ rest: { scaleX: 0 }, hover: { scaleX: 1 } }}
-                transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-                style={{ transformOrigin: "left" }}
-                className="mt-1 block h-px bg-powder"
-              />
-            </h3>
-            <p className="mt-3 text-[13px] leading-relaxed text-cream/65">{item.description}</p>
-          </motion.div>
+        <Reveal key={item.index} delay={i * 0.06}>
+          <div className="group h-56 cursor-default sm:h-64 [perspective:1200px]">
+            <div className="relative h-full w-full transition-transform duration-700 ease-smooth [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+              <div className="absolute inset-0 flex flex-col justify-between border border-cream/20 bg-ink-soft/30 p-5 [backface-visibility:hidden] sm:p-6">
+                <p className="font-display italic font-light text-3xl leading-none text-powder-light sm:text-4xl">
+                  {item.index}
+                </p>
+                <h3 className="font-display text-lg text-cream sm:text-xl">{item.title}</h3>
+              </div>
+              <div className="absolute inset-0 flex items-center border border-powder/50 bg-ink-soft p-5 [backface-visibility:hidden] [transform:rotateY(180deg)] sm:p-6">
+                <p className="text-[13px] leading-relaxed text-cream/85 sm:text-sm">{item.description}</p>
+              </div>
+            </div>
+          </div>
         </Reveal>
       ))}
     </div>

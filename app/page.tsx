@@ -65,7 +65,7 @@ export default function HomePage() {
           className="hero-video-fallback object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink/95 via-ink/35 to-ink/10" />
-        <div className="absolute inset-0 bg-gradient-to-t from-powder-deep/80 via-powder-deep/15 to-transparent mix-blend-color" />
+        <div className="absolute inset-0 bg-gradient-to-t from-sand-100/80 via-sand-100/15 to-transparent mix-blend-color" />
         <div className="container-page relative z-10 w-full pb-16 sm:pb-20">
           <p className="text-[11px] sm:text-xs uppercase tracking-widest2 text-cream/80 font-medium">
             Florida&rsquo;s West Coast
@@ -95,28 +95,55 @@ export default function HomePage() {
 
       {/* No. 01 — The Philosophy */}
       <section className="container-page py-28 sm:py-36">
-        <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-12 lg:gap-x-8">
-          <Reveal className="lg:col-span-7">
-            <p className="dept-label">
-              <span className="dept-number">01</span> The Philosophy
-            </p>
-            <p className="drop-cap mt-8 font-display text-xl sm:text-2xl leading-[1.6] text-ink max-w-xl">
+        <Reveal>
+          <p className="dept-label">
+            <span className="dept-number">01</span> The Philosophy
+          </p>
+        </Reveal>
+
+        <div className="mt-8 max-w-2xl flow-root">
+          <Reveal
+            className="float-none mb-10 sm:float-right sm:mb-6 sm:ml-10 sm:w-2/5 lg:w-[38%]"
+            delay={0.15}
+          >
+            <div className="relative aspect-[3/2] overflow-hidden bg-sand-100">
+              <Image
+                src="/images/home/philosophy.jpg"
+                alt="Colin James Kennedy, CEO and Founder of StayHaus FL"
+                fill
+                sizes="(min-width: 640px) 40vw, 100vw"
+                className="object-contain"
+              />
+              <div className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-ink/85 via-ink/20 to-transparent" />
+              <div className="absolute bottom-5 left-5 sm:bottom-6 sm:left-6">
+                <p className="font-display italic text-xl sm:text-2xl text-cream">Colin James Kennedy</p>
+                <p className="mt-1 text-[10px] uppercase tracking-widest2 text-cream/75 font-medium leading-relaxed">
+                  CEO &amp; Founder
+                  <br />
+                  of StayHaus FL
+                </p>
+              </div>
+            </div>
+          </Reveal>
+
+          <Reveal>
+            <p className="drop-cap font-display text-xl sm:text-2xl leading-[1.6] text-ink">
               There&rsquo;s a particular kind of quiet that settles over St. Petersburg by six in
               the evening — the light easing into the color of the inside of a shell, the day&rsquo;s
               heat finally breaking over the bay.
             </p>
-            <p className="mt-6 font-display text-xl sm:text-2xl leading-[1.6] text-ink max-w-xl">
+            <p className="mt-6 font-display text-xl sm:text-2xl leading-[1.6] text-ink">
               It&rsquo;s the kind of hour that makes you want to stay a little longer, pour
               something cold, and let the evening take its time. That instinct — the pull to
               linger, to actually live somewhere instead of just passing through — is what
               StayHaus was built around.
             </p>
-            <p className="mt-6 text-lg leading-[1.75] text-ink-soft/75 max-w-lg">
+            <p className="mt-6 text-lg leading-[1.75] text-ink-soft/75">
               We design, furnish, and operate every property to a single hospitality standard,
               down to the linens and the coffee in the cabinet. Nothing is left to chance and
               nothing feels generic.
             </p>
-            <p className="mt-4 text-lg leading-[1.75] text-ink-soft/75 max-w-lg">
+            <p className="mt-4 text-lg leading-[1.75] text-ink-soft/75">
               So wherever you land in Florida, the stay feels considered, consistent, and
               unmistakably StayHaus. Not a spare room. Not a hotel room. Somewhere that was
               actually meant for you.
@@ -124,25 +151,6 @@ export default function HomePage() {
             <Button href="/about" variant="ghost" className="mt-8 px-0">
               Read Our Philosophy &rarr;
             </Button>
-          </Reveal>
-
-          <Reveal className="lg:col-span-5 lg:col-start-8 relative lg:mt-16" delay={0.15}>
-            <div className="relative aspect-[3/2] overflow-hidden bg-sand-100">
-              <Image
-                src="/images/home/philosophy.jpg"
-                alt="Colin James Kennedy, CEO and Founder of StayHaus FL"
-                fill
-                sizes="(min-width: 1024px) 38vw, 100vw"
-                className="object-contain"
-              />
-              <div className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-ink/85 via-ink/20 to-transparent" />
-              <div className="absolute bottom-5 left-5 sm:bottom-6 sm:left-6">
-                <p className="font-display italic text-xl sm:text-2xl text-cream">Colin James Kennedy</p>
-                <p className="mt-1 text-[10px] uppercase tracking-widest2 text-cream/75 font-medium">
-                  CEO &amp; Founder of StayHaus FL
-                </p>
-              </div>
-            </div>
           </Reveal>
         </div>
       </section>
