@@ -130,17 +130,15 @@ export default function HomePage() {
             <div className="relative aspect-[3/2] overflow-hidden bg-sand-100">
               <Image
                 src="/images/home/philosophy.jpg"
-                alt="A StayHaus guest at ease in a thoughtfully designed living room"
+                alt="Colin James Kennedy, CEO and Founder of StayHaus FL"
                 fill
                 sizes="(min-width: 1024px) 46vw, 100vw"
                 className="object-contain"
               />
             </div>
             <div className="max-w-[280px] border border-ink/10 bg-cream p-5 mt-6">
-              <p className="caption text-ink">The StayHaus standard, in every room.</p>
-              <p className="mt-1 text-xs text-ink-soft/50">
-                Designed to feel like it was always yours.
-              </p>
+              <p className="caption text-ink">Colin James Kennedy</p>
+              <p className="mt-1 text-xs text-ink-soft/50">CEO &amp; Founder of StayHaus FL</p>
             </div>
           </Reveal>
         </div>
