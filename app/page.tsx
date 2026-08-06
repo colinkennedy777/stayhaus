@@ -128,25 +128,42 @@ export default function HomePage() {
 
           <Reveal className="max-w-3xl">
             <p className="drop-cap font-display text-xl sm:text-2xl leading-[1.6] text-ink">
-              There&rsquo;s a particular kind of quiet that settles over St. Petersburg by six in
-              the evening — the light easing into the color of the inside of a shell, the day&rsquo;s
-              heat finally breaking over the bay.
+              There&rsquo;s a particular kind of quiet that settles over St. Petersburg in the
+              early evening. The light softens over the water, the heat begins to lift, and for
+              a moment, everything seems to slow down.
             </p>
             <p className="mt-6 font-display text-xl sm:text-2xl leading-[1.6] text-ink">
-              It&rsquo;s the kind of hour that makes you want to stay a little longer, pour
-              something cold, and let the evening take its time. That instinct — the pull to
-              linger, to actually live somewhere instead of just passing through — is what
-              StayHaus was built around.
+              It&rsquo;s the kind of evening that makes you want to stay a little longer.
+            </p>
+            <p className="mt-6 font-display italic text-xl sm:text-2xl leading-[1.6] text-ink">
+              That feeling is what inspired StayHaus.
             </p>
             <p className="mt-6 text-lg leading-[1.75] text-ink-soft/75">
-              We design, furnish, and operate every property to a single hospitality standard,
-              down to the linens and the coffee in the cabinet. Nothing is left to chance and
-              nothing feels generic.
+              I&rsquo;ve always believed where you stay should feel like more than a place you
+              booked. It should feel considered — comfortable enough to settle into,
+              thoughtfully designed without trying too hard, and connected to the place you came
+              to experience.
             </p>
             <p className="mt-4 text-lg leading-[1.75] text-ink-soft/75">
-              So wherever you land in Florida, the stay feels considered, consistent, and
-              unmistakably StayHaus. Not a spare room. Not a hotel room. Somewhere that was
-              actually meant for you.
+              That philosophy shapes every StayHaus property. We design, furnish, and operate
+              each home ourselves to one consistent hospitality standard, paying attention to
+              the details that quietly make a stay better — from the linens on the bed to the
+              coffee waiting in the cabinet.
+            </p>
+            <p className="mt-4 text-lg leading-[1.75] text-ink-soft/75">
+              Because the best hospitality rarely comes from one grand gesture. It comes from
+              getting the small things right, again and again.
+            </p>
+            <p className="mt-4 text-lg leading-[1.75] text-ink-soft/75">
+              As StayHaus grows throughout Florida, that standard will remain the same:
+              thoughtfully designed spaces, genuine hospitality, and a stay that feels
+              distinctly connected to where you are.
+            </p>
+            <p className="mt-6 font-display italic text-xl sm:text-2xl leading-[1.6] text-ink">
+              Not a spare room. Not another hotel room.
+            </p>
+            <p className="mt-2 font-display italic text-xl sm:text-2xl leading-[1.6] text-ink">
+              A place made for actually living — even if only for a little while.
             </p>
             <Button href="/about" variant="ghost" className="mt-8 px-0">
               Read Our Philosophy &rarr;
