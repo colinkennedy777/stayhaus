@@ -25,11 +25,17 @@ const items = [
 
 export function Differentiators() {
   return (
-    <div className="grid grid-cols-1 gap-x-10 gap-y-14 sm:grid-cols-2">
+    <div className="grid grid-cols-1 gap-x-10 gap-y-16 sm:grid-cols-2">
       {items.map((item, i) => (
-        <Reveal key={item.index} delay={(i % 2) * 0.1}>
-          <p className="font-display text-2xl text-powder">{item.index}</p>
-          <h3 className="mt-4 font-display text-xl text-cream">{item.title}</h3>
+        <Reveal
+          key={item.index}
+          delay={(i % 2) * 0.1}
+          className={i % 2 === 1 ? "sm:mt-16" : undefined}
+        >
+          <p className="font-display italic font-light text-6xl sm:text-7xl text-powder leading-none">
+            {item.index}
+          </p>
+          <h3 className="mt-6 font-display text-2xl text-cream">{item.title}</h3>
           <p className="mt-3 text-[15px] leading-relaxed text-cream/70 max-w-sm">{item.description}</p>
         </Reveal>
       ))}

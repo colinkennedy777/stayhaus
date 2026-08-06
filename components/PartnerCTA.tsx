@@ -9,17 +9,22 @@ export function PartnerCTA() {
         <Image src="/images/partner/portfolio.svg" alt="" fill sizes="100vw" className="object-cover" />
       </div>
       <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/85 to-ink/40" />
-      <div className="container-page relative z-10 py-24 sm:py-32">
-        <Reveal className="max-w-xl">
-          <p className="eyebrow eyebrow-light mb-4">Property Owners</p>
-          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl leading-[1.1] text-cream">
-            Own a property in Florida? Partner with StayHaus.
+      <div className="container-page relative z-10 py-28 sm:py-40">
+        <Reveal className="max-w-2xl">
+          <p className="dept-label">
+            <span className="dept-number text-cream">07</span>
+            <span className="text-cream/60">The Invitation</span>
+          </p>
+          <h2 className="mt-6 font-display text-4xl sm:text-5xl md:text-6xl leading-[1.05] text-cream">
+            Own a property in Florida?
+            <br />
+            <span className="italic font-light text-powder">Partner with StayHaus.</span>
           </h2>
-          <p className="mt-6 text-cream/75 leading-relaxed">
+          <p className="mt-7 text-cream/75 leading-relaxed max-w-lg">
             We design, furnish, and manage every home to a single hospitality standard —
             so your property performs like part of a growing brand, not a standalone listing.
           </p>
-          <Button href="/partner" variant="secondary" className="mt-9 border-cream/40 text-cream hover:border-cream">
+          <Button href="/partner" variant="secondary" light className="mt-9">
             Learn About Partnership
           </Button>
         </Reveal>
