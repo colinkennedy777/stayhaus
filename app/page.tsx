@@ -66,11 +66,11 @@ export default function HomePage() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink/95 via-ink/35 to-ink/10" />
         <div className="absolute inset-0 bg-gradient-to-t from-powder-deep/80 via-powder-deep/15 to-transparent mix-blend-color" />
-        <div className="container-page relative z-10 pb-16 sm:pb-20">
+        <div className="container-page relative z-10 w-full pb-16 sm:pb-20">
           <p className="text-[11px] sm:text-xs uppercase tracking-widest2 text-cream/80 font-medium">
             Florida&rsquo;s West Coast
           </p>
-          <h1 className="mt-6 -ml-1 font-display italic font-light text-cream max-w-6xl sm:-ml-2">
+          <h1 className="mt-6 font-display italic font-light text-cream max-w-6xl">
             <span className="block leading-[1.05] text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
               Stay somewhere that
             </span>
