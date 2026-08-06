@@ -24,7 +24,7 @@ body {
     display: inline-block;
     width: 18px;
     height: 2px;
-    background-color: #8fb7c9;
+    background-color: #22b8d6;
     flex-shrink: 0;
   }
 
@@ -33,7 +33,7 @@ body {
      utilities layer as text-sand-*, and wins the cascade on source order
      regardless of which class comes later in the element's className. */
   .eyebrow-light {
-    color: #c7dce4 !important;
+    color: #7dd6ea !important;
   }
 
   .container-page {
@@ -41,7 +41,7 @@ body {
   }
 
   .link-underline {
-    background-image: linear-gradient(#8fb7c9, #8fb7c9);
+    background-image: linear-gradient(#22b8d6, #22b8d6);
     background-position: 0 100%;
     background-repeat: no-repeat;
     background-size: 0% 1px;
@@ -98,7 +98,7 @@ body {
   float: left;
   padding-right: 0.65rem;
   padding-top: 0.3rem;
-  color: #7d5f3e;
+  color: #7a4112;
 }
 
 /* Hero video vs. its static-image fallback: CSS-only, so it can't race with
@@ -119,8 +119,8 @@ body {
 }
 
 ::selection {
-  background-color: #8fb7c9;
-  color: #4a4b48;
+  background-color: #22b8d6;
+  color: #f7f3ea;
 }
 
 /* Safety net: guarantee scroll-reveal content is visible for users (and

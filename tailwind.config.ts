@@ -24,36 +24,38 @@ const config: Config = {
           DEFAULT: "#F7F3EA",
           dim: "#EFE7D5",
         },
-        // Mist (100/200) is the secondary-background family; 300 is Powder
-        // Blue reused specifically as light-on-dark label text, where its
-        // contrast holds up (see components/Footer, PartnerCTA, PageHero).
+        // Mist stays a quiet, neutral secondary background — same role as
+        // the plain white/dark chrome in the reference brand this palette
+        // is calibrated against. Boldness lives in the accents, not here.
         sand: {
           50: "#FBFCFC",
           100: "#D5E1E3",
-          200: "#B9CDD1",
-          300: "#8FB7C9",
-          400: "#6B94A5",
-          500: "#4F7A8C",
+          200: "#6FC7DE",
+          300: "#22B8D6",
+          400: "#1794AE",
+          500: "#0E6E82",
         },
-        // A deepened, accessible heritage tone carrying Camel's warmth —
-        // used anywhere Camel needs to function as legible small text
-        // (eyebrows, links, marks) against Warm Cream. `light` is the true
+        // A deepened, accessible version of the bold Camel accent — used
+        // anywhere Camel needs to function as legible small text (eyebrows,
+        // links, marks) against Warm Cream. `light` is the full-saturation
         // Camel swatch, reserved for non-text accents (borders, dividers).
         clay: {
-          DEFAULT: "#7D5F3E",
-          light: "#B99D7B",
-          dark: "#5C4730",
+          DEFAULT: "#7A4112",
+          light: "#B5651D",
+          dark: "#5C3009",
         },
-        // Powder Blue — the recognizable StayHaus brand color. Used for
-        // surfaces, badges, active/hover states and rules rather than as a
-        // small-text color, since it doesn't clear text-contrast on Cream.
+        // Powder Blue — the recognizable StayHaus brand color, pushed to a
+        // bold, saturated turquoise so it reads as confident color rather
+        // than a pastel. Used for surfaces, badges, active/hover states and
+        // rules rather than as a small-text color on Cream (see `deep`/
+        // `light` below for the text-safe variants of the same hue).
         powder: {
-          DEFAULT: "#8FB7C9",
-          deep: "#4F7A8C",
-          light: "#C7DCE4",
+          DEFAULT: "#22B8D6",
+          deep: "#0E6E82",
+          light: "#7DD6EA",
         },
-        // True Camel, named directly for new component work.
-        camel: "#B99D7B",
+        // Full-saturation Camel, named directly for new component work.
+        camel: "#B5651D",
       },
       fontFamily: {
         display: ["var(--font-fraunces)", "Georgia", "serif"],

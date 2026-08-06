@@ -37,7 +37,7 @@ export default function HomePage() {
       />
 
       {/* Cover / Hero */}
-      <section className="relative flex h-[100svh] min-h-[640px] items-end overflow-hidden">
+      <section className="relative flex h-[100svh] min-h-[640px] items-center justify-center overflow-hidden">
         <video
           autoPlay
           muted
@@ -56,29 +56,25 @@ export default function HomePage() {
           sizes="100vw"
           className="hero-video-fallback object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/30 to-ink/10" />
-        <div className="container-page relative z-10 pb-20 sm:pb-24">
-          <p className="eyebrow eyebrow-light mb-6">Florida&rsquo;s West Coast &mdash; Vol. I</p>
-          <h1 className="font-display leading-[0.98] tracking-tight text-cream max-w-3xl">
-            <span className="block text-5xl sm:text-6xl md:text-7xl">Stay somewhere</span>
-            <span className="block italic font-light text-5xl sm:text-6xl md:text-7xl text-powder mt-1">
-              designed to feel like it&rsquo;s yours.
-            </span>
-          </h1>
-          <p className="mt-8 max-w-lg font-display italic text-lg sm:text-xl text-cream/85 leading-snug">
-            A field guide to easy, elevated living on the Gulf Coast — thoughtfully furnished
-            homes in the neighborhoods worth waking up in.
+        <div className="absolute inset-0 bg-gradient-to-b from-ink/35 via-ink/25 to-ink/50" />
+        <div className="container-page relative z-10 flex flex-col items-center text-center">
+          <p className="text-[11px] sm:text-xs uppercase tracking-widest2 text-cream/80 font-medium">
+            Florida&rsquo;s West Coast
           </p>
-          <div className="mt-10 flex flex-wrap items-center gap-6">
-            <div className="flex flex-wrap gap-4">
-              <Button href="/stays">Browse Stays</Button>
-              <Button href="/explore" variant="secondary" light>
-                Explore Florida
-              </Button>
-            </div>
-            <p className="text-[11px] uppercase tracking-widest2 text-cream/50">
-              Curated by the StayHaus Team
-            </p>
+          <h1 className="mt-6 font-display italic font-light leading-[1.08] text-cream text-5xl sm:text-6xl md:text-7xl max-w-3xl">
+            Stay somewhere that feels like yours.
+          </h1>
+          <p className="mt-7 text-[11px] sm:text-xs uppercase tracking-widest2 text-cream/70 font-medium">
+            Thoughtfully Furnished Stays, Designed In-House
+          </p>
+          <p className="mt-5 font-display italic text-cream/60 text-sm sm:text-base">
+            Now welcoming guests to St. Petersburg, Gulf Beaches &amp; Tampa
+          </p>
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+            <Button href="/stays">Browse Stays</Button>
+            <Button href="/explore" variant="secondary" light>
+              Explore Florida
+            </Button>
           </div>
         </div>
       </section>

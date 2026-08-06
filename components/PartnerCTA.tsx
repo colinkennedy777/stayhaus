@@ -4,25 +4,26 @@ import { Reveal } from "@/components/Reveal";
 
 export function PartnerCTA() {
   return (
-    <section className="relative overflow-hidden bg-ink">
-      <div className="absolute inset-0 opacity-35">
-        <Image src="/images/partner/portfolio.svg" alt="" fill sizes="100vw" className="object-cover" />
-      </div>
-      <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/85 to-ink/40" />
-      <div className="container-page relative z-10 py-28 sm:py-40">
-        <Reveal className="max-w-2xl">
-          <p className="dept-label">
-            <span className="dept-number text-cream">07</span>
-            <span className="text-cream/60">The Invitation</span>
+    <section className="relative flex min-h-[70vh] items-center justify-center overflow-hidden py-24">
+      <Image
+        src="/images/destinations/gulf-beaches.jpg"
+        alt="Aerial view of Florida's Gulf Coast"
+        fill
+        sizes="100vw"
+        className="object-cover"
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-ink/45 via-ink/35 to-ink/55" />
+      <div className="container-page relative z-10 flex flex-col items-center text-center">
+        <Reveal className="flex flex-col items-center">
+          <p className="text-[11px] sm:text-xs uppercase tracking-widest2 text-cream/80 font-medium">
+            For Property Owners
           </p>
-          <h2 className="mt-6 font-display text-4xl sm:text-5xl md:text-6xl leading-[1.05] text-cream">
-            Own a property in Florida?
-            <br />
-            <span className="italic font-light text-powder">Partner with StayHaus.</span>
+          <h2 className="mt-6 font-display italic font-light leading-[1.1] text-cream text-4xl sm:text-5xl md:text-6xl max-w-2xl">
+            Partner with StayHaus.
           </h2>
-          <p className="mt-7 text-cream/75 leading-relaxed max-w-lg">
+          <p className="mt-6 max-w-md text-cream/80 leading-relaxed">
             We design, furnish, and manage every home to a single hospitality standard —
-            so your property performs like part of a growing brand, not a standalone listing.
+            so your property performs like part of a growing brand.
           </p>
           <Button href="/partner" variant="secondary" light className="mt-9">
             Learn About Partnership
