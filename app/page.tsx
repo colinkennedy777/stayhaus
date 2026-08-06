@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/Button";
 import { Reveal } from "@/components/Reveal";
-import { PullQuoteCarousel } from "@/components/PullQuoteCarousel";
+import { TestimonialMarquee } from "@/components/TestimonialMarquee";
 import { Differentiators } from "@/components/Differentiators";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { PartnerCTA } from "@/components/PartnerCTA";
@@ -65,12 +65,18 @@ export default function HomePage() {
           className="hero-video-fallback object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink/95 via-ink/35 to-ink/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-powder-deep/80 via-powder-deep/15 to-transparent mix-blend-color" />
         <div className="container-page relative z-10 pb-16 sm:pb-20">
           <p className="text-[11px] sm:text-xs uppercase tracking-widest2 text-cream/80 font-medium">
             Florida&rsquo;s West Coast
           </p>
-          <h1 className="mt-6 font-display italic font-light leading-[1.02] text-cream text-6xl sm:text-7xl md:text-8xl lg:text-9xl max-w-4xl">
-            Stay somewhere that feels like yours.
+          <h1 className="mt-6 -ml-1 font-display italic font-light text-cream max-w-5xl sm:-ml-2">
+            <span className="block leading-[1.05] text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
+              Stay somewhere that feels like
+            </span>
+            <span className="block leading-[0.92] text-7xl sm:text-8xl md:text-9xl lg:text-[9.5rem]">
+              yours.
+            </span>
           </h1>
           <p className="mt-8 text-[11px] sm:text-xs uppercase tracking-widest2 text-cream/70 font-medium">
             Thoughtfully Furnished Stays, Designed In-House
@@ -94,16 +100,24 @@ export default function HomePage() {
             <p className="dept-label">
               <span className="dept-number">01</span> The Philosophy
             </p>
-            <p className="drop-cap mt-8 font-display text-xl sm:text-2xl leading-relaxed text-ink max-w-2xl">
+            <p className="drop-cap mt-8 font-display text-xl sm:text-2xl leading-[1.6] text-ink max-w-xl">
               There&rsquo;s a particular kind of quiet that settles over St. Petersburg by six in
               the evening — the light easing into the color of the inside of a shell, the day&rsquo;s
-              heat finally breaking over the bay. It&rsquo;s the kind of hour that makes you want to
-              stay a little longer. That instinct, more than anything, is what StayHaus was built
-              around.
+              heat finally breaking over the bay.
             </p>
-            <p className="mt-6 text-ink-soft/75 leading-relaxed max-w-xl">
-              We design, furnish, and operate every property to a single hospitality standard —
-              so wherever you land in Florida, the stay feels considered, consistent, and
+            <p className="mt-6 font-display text-xl sm:text-2xl leading-[1.6] text-ink max-w-xl">
+              It&rsquo;s the kind of hour that makes you want to stay a little longer, pour
+              something cold, and let the evening take its time. That instinct — the pull to
+              linger, to actually live somewhere instead of just passing through — is what
+              StayHaus was built around.
+            </p>
+            <p className="mt-6 text-lg leading-[1.75] text-ink-soft/75 max-w-lg">
+              We design, furnish, and operate every property to a single hospitality standard,
+              down to the linens and the coffee in the cabinet. Nothing is left to chance and
+              nothing feels generic.
+            </p>
+            <p className="mt-4 text-lg leading-[1.75] text-ink-soft/75 max-w-lg">
+              So wherever you land in Florida, the stay feels considered, consistent, and
               unmistakably StayHaus. Not a spare room. Not a hotel room. Somewhere that was
               actually meant for you.
             </p>
@@ -169,105 +183,83 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Pull quote, breaking the page */}
-      <section className="container-page py-28 sm:py-36">
-        <div className="lg:pl-[16.6667%]">
-          <PullQuoteCarousel testimonials={testimonials} />
+      {/* Guest reviews, breaking the page as a continuous marquee */}
+      <section className="py-28 sm:py-36">
+        <div className="container-page">
+          <Reveal>
+            <p className="eyebrow">What Guests Say</p>
+          </Reveal>
+        </div>
+        <div className="mt-12">
+          <TestimonialMarquee testimonials={testimonials} />
         </div>
       </section>
 
       {/* No. 03 — Where We Cover */}
-      <section className="container-page py-24 sm:py-32">
-        <Reveal>
-          <p className="dept-label">
-            <span className="dept-number">03</span> Where We Cover
-          </p>
-          <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-[2.75rem] leading-[1.1] tracking-tight text-ink max-w-xl">
-            Three markets, and counting
-          </h2>
-          <p className="mt-5 max-w-lg text-ink-soft/75 leading-relaxed">
-            StayHaus is currently based across St. Petersburg, the Gulf Beaches, and Tampa —
-            with Sarasota, Naples, and Miami next on the list.
-          </p>
-        </Reveal>
+      <section className="py-20 sm:py-24">
+        <div className="container-page">
+          <Reveal>
+            <p className="dept-label">
+              <span className="dept-number">03</span> Where We Cover
+            </p>
+            <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-[2.75rem] leading-[1.1] tracking-tight text-ink max-w-xl">
+              Six markets, three live and counting
+            </h2>
+            <p className="mt-5 max-w-lg text-ink-soft/75 leading-relaxed">
+              StayHaus is currently based across St. Petersburg, the Gulf Beaches, and Tampa —
+              with Sarasota, Naples, and Miami next on the list.
+            </p>
+          </Reveal>
+        </div>
 
-        <div className="mt-16 divide-y divide-ink/10 border-t border-ink/10">
+        <div className="mt-12 -mx-5 flex gap-6 overflow-x-auto px-5 pb-4 scrollbar-hide snap-x snap-mandatory sm:-mx-8 sm:gap-8 sm:px-8 lg:-mx-12 lg:px-12">
           {destinations.map((destination, i) => {
             const disabled = destination.state === "coming-soon";
             const category = destinationCategories[destination.slug];
-            const content = (
-              <div className={cn("relative overflow-hidden py-12", i % 2 === 1 && "lg:text-right")}>
-                <p
-                  aria-hidden
-                  className={cn(
-                    "pointer-events-none absolute -top-6 font-display italic font-light text-[9rem] sm:text-[13rem] leading-none text-ink/[0.04] select-none",
-                    i % 2 === 1 ? "-right-2 sm:-right-4" : "-left-2 sm:-left-4"
-                  )}
-                >
-                  {String(i + 1).padStart(2, "0")}
-                </p>
-                <div
-                  className={cn(
-                    "relative flex flex-col gap-6 lg:flex-row lg:items-center lg:gap-10",
-                    i % 2 === 1 && "lg:flex-row-reverse"
-                  )}
-                >
-                  <div className="relative aspect-[4/3] overflow-hidden lg:w-5/12 lg:shrink-0">
-                    <Image
-                      src={destination.image}
-                      alt={destination.name}
-                      fill
-                      sizes="(min-width: 1024px) 40vw, 100vw"
-                      className={cn(
-                        "object-cover transition-transform duration-[1400ms] ease-smooth",
-                        !disabled && "group-hover:scale-[1.06]",
-                        disabled && "grayscale-[35%] opacity-80"
-                      )}
-                    />
-                  </div>
-                  <div className={cn("lg:w-6/12", i % 2 === 1 && "lg:ml-auto")}>
-                    {category && (
-                      <p
-                        className={cn(
-                          "text-[10px] uppercase tracking-widest2 text-powder-deep font-medium",
-                          i % 2 === 1 && "lg:text-right"
-                        )}
-                      >
-                        {category}
-                      </p>
+            const card = (
+              <div className="group relative w-[260px] shrink-0 snap-start sm:w-[300px]">
+                <div className="relative aspect-[4/5] overflow-hidden">
+                  <Image
+                    src={destination.image}
+                    alt={destination.name}
+                    fill
+                    sizes="(min-width: 640px) 300px, 260px"
+                    className={cn(
+                      "object-cover transition-transform duration-[1400ms] ease-smooth",
+                      !disabled && "group-hover:scale-[1.06]",
+                      disabled && "grayscale-[35%] opacity-80"
                     )}
-                    <div className={cn("mt-3 flex items-center gap-3", i % 2 === 1 && "lg:justify-end")}>
-                      <h3 className="font-display text-3xl sm:text-4xl text-ink">
-                        <span
-                          className={cn(
-                            !disabled &&
-                              "bg-[linear-gradient(currentColor,currentColor)] bg-no-repeat bg-[length:0%_1px] bg-[position:0_100%] transition-[background-size] duration-500 ease-smooth group-hover:bg-[length:100%_1px]"
-                          )}
-                        >
-                          {destination.name}
-                        </span>
-                      </h3>
-                      {disabled && (
-                        <span className="rounded-full border border-ink/20 px-3 py-1 text-[10px] uppercase tracking-widest2 text-ink-soft/60">
-                          Coming Soon
-                        </span>
-                      )}
-                    </div>
-                    <p className={cn("mt-3 max-w-md text-ink-soft/70 leading-relaxed", i % 2 === 1 && "lg:ml-auto")}>
-                      {destination.tagline} — {destination.description}
-                    </p>
-                  </div>
+                  />
+                  {disabled && (
+                    <span className="absolute left-4 top-4 rounded-full border border-cream/50 bg-ink/40 px-3 py-1 text-[10px] uppercase tracking-widest2 text-cream backdrop-blur-sm">
+                      Coming Soon
+                    </span>
+                  )}
                 </div>
+                {category && (
+                  <p className="mt-4 text-[10px] uppercase tracking-widest2 text-powder-deep font-medium">
+                    {category}
+                  </p>
+                )}
+                <h3 className="mt-2 font-display text-2xl text-ink">
+                  <span
+                    className={cn(
+                      !disabled &&
+                        "bg-[linear-gradient(currentColor,currentColor)] bg-no-repeat bg-[length:0%_1px] bg-[position:0_100%] transition-[background-size] duration-500 ease-smooth group-hover:bg-[length:100%_1px]"
+                    )}
+                  >
+                    {destination.name}
+                  </span>
+                </h3>
+                <p className="mt-2 text-sm text-ink-soft/70 leading-relaxed">{destination.tagline}</p>
               </div>
             );
 
             return (
-              <Reveal key={destination.slug} delay={(i % 3) * 0.06}>
-                {disabled ? (
-                  content
-                ) : (
+              <Reveal key={destination.slug} delay={(i % 3) * 0.06} className="shrink-0">
+                {disabled ? card : (
                   <Link href={`/stays?location=${destination.slug}`} className="group block">
-                    {content}
+                    {card}
                   </Link>
                 )}
               </Reveal>
