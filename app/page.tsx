@@ -96,7 +96,7 @@ export default function HomePage() {
       {/* No. 01 — The Philosophy */}
       <section className="container-page py-28 sm:py-36">
         <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-12 lg:gap-x-8">
-          <Reveal className="lg:col-span-6">
+          <Reveal className="lg:col-span-7">
             <p className="dept-label">
               <span className="dept-number">01</span> The Philosophy
             </p>
@@ -126,19 +126,22 @@ export default function HomePage() {
             </Button>
           </Reveal>
 
-          <Reveal className="lg:col-span-6 lg:col-start-7 relative lg:mt-16" delay={0.15}>
+          <Reveal className="lg:col-span-5 lg:col-start-8 relative lg:mt-16" delay={0.15}>
             <div className="relative aspect-[3/2] overflow-hidden bg-sand-100">
               <Image
                 src="/images/home/philosophy.jpg"
                 alt="Colin James Kennedy, CEO and Founder of StayHaus FL"
                 fill
-                sizes="(min-width: 1024px) 46vw, 100vw"
+                sizes="(min-width: 1024px) 38vw, 100vw"
                 className="object-contain"
               />
-            </div>
-            <div className="max-w-[280px] border border-ink/10 bg-cream p-5 mt-6">
-              <p className="caption text-ink">Colin James Kennedy</p>
-              <p className="mt-1 text-xs text-ink-soft/50">CEO &amp; Founder of StayHaus FL</p>
+              <div className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-ink/85 via-ink/20 to-transparent" />
+              <div className="absolute bottom-5 left-5 sm:bottom-6 sm:left-6">
+                <p className="font-display italic text-xl sm:text-2xl text-cream">Colin James Kennedy</p>
+                <p className="mt-1 text-[10px] uppercase tracking-widest2 text-cream/75 font-medium">
+                  CEO &amp; Founder of StayHaus FL
+                </p>
+              </div>
             </div>
           </Reveal>
         </div>
