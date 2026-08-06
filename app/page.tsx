@@ -269,22 +269,14 @@ export default function HomePage() {
       </section>
 
       {/* No. 04 — The Standard */}
-      <section className="relative overflow-hidden bg-powder-deep">
-        <div
-          aria-hidden
-          className="pointer-events-none absolute -right-24 -top-24 h-[28rem] w-[28rem] rounded-full bg-powder/20 blur-3xl"
-        />
-        <div
-          aria-hidden
-          className="pointer-events-none absolute -bottom-32 left-1/3 h-[24rem] w-[24rem] rounded-full bg-clay-light/10 blur-3xl"
-        />
-        <div className="container-page relative py-24 sm:py-32">
+      <section className="bg-ink">
+        <div className="container-page py-16 sm:py-20">
           <Reveal>
             <p className="dept-label">
               <span className="dept-number text-cream">04</span>
               <span className="text-cream/60">The Standard</span>
             </p>
-            <h2 className="mt-6 mb-16 font-display text-3xl sm:text-4xl md:text-[2.75rem] leading-[1.1] tracking-tight text-cream max-w-xl">
+            <h2 className="mt-4 mb-10 font-display text-2xl sm:text-3xl leading-[1.15] tracking-tight text-cream max-w-lg">
               What makes a stay a StayHaus
             </h2>
           </Reveal>
