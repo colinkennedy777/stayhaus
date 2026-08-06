@@ -101,9 +101,9 @@ export default function HomePage() {
           </p>
         </Reveal>
 
-        <div className="mt-8 max-w-2xl flow-root">
+        <div className="mt-8 flow-root">
           <Reveal
-            className="float-none mb-10 sm:float-right sm:mb-6 sm:ml-10 sm:w-2/5 lg:w-[38%]"
+            className="float-none mb-10 sm:float-right sm:mb-6 sm:ml-10 sm:mt-0 sm:w-2/5 lg:mt-16 lg:w-5/12"
             delay={0.15}
           >
             <div className="relative aspect-[3/2] overflow-hidden bg-sand-100">
@@ -111,7 +111,7 @@ export default function HomePage() {
                 src="/images/home/philosophy.jpg"
                 alt="Colin James Kennedy, CEO and Founder of StayHaus FL"
                 fill
-                sizes="(min-width: 640px) 40vw, 100vw"
+                sizes="(min-width: 1024px) 42vw, (min-width: 640px) 40vw, 100vw"
                 className="object-contain"
               />
               <div className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-ink/85 via-ink/20 to-transparent" />
@@ -126,7 +126,7 @@ export default function HomePage() {
             </div>
           </Reveal>
 
-          <Reveal>
+          <Reveal className="max-w-3xl">
             <p className="drop-cap font-display text-xl sm:text-2xl leading-[1.6] text-ink">
               There&rsquo;s a particular kind of quiet that settles over St. Petersburg by six in
               the evening — the light easing into the color of the inside of a shell, the day&rsquo;s
