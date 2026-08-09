@@ -103,14 +103,15 @@ export default function HomePage() {
             className="float-none mb-10 sm:float-right sm:mb-6 sm:ml-10 sm:mt-0 sm:w-2/5 lg:mt-16 lg:w-5/12"
             delay={0.15}
           >
-            <div className="relative aspect-[3/2] overflow-hidden bg-sand-100">
+            <div className="group relative aspect-[3/2] overflow-hidden bg-sand-100 grain">
               <Image
                 src="/images/home/philosophy.jpg"
                 alt="Colin James Kennedy, CEO and Founder of StayHaus FL"
                 fill
                 sizes="(min-width: 1024px) 42vw, (min-width: 640px) 40vw, 100vw"
-                className="object-contain"
+                className="object-contain grayscale contrast-[1.05] transition-all duration-[1200ms] ease-smooth group-hover:grayscale-0 group-hover:scale-[1.04]"
               />
+              <div className="pointer-events-none absolute inset-0 bg-clay/25 mix-blend-color transition-opacity duration-[1200ms] ease-smooth group-hover:opacity-0" />
               <div className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-ink/85 via-ink/20 to-transparent" />
               <div className="absolute bottom-5 left-5 sm:bottom-6 sm:left-6">
                 <p className="font-display italic text-xl sm:text-2xl text-cream">Colin James Kennedy</p>
