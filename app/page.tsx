@@ -4,7 +4,6 @@ import { Button } from "@/components/Button";
 import { Reveal } from "@/components/Reveal";
 import { TestimonialMarquee } from "@/components/TestimonialMarquee";
 import { Differentiators } from "@/components/Differentiators";
-import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { PartnerCTA } from "@/components/PartnerCTA";
 import { JsonLd } from "@/components/JsonLd";
 import { getProperty } from "@/data/properties";
@@ -26,8 +25,6 @@ const destinationCategories: Record<string, string> = {
   naples: "Refined Coastal",
   miami: "Design-Forward",
 };
-
-const fieldNotes = testimonials.slice(1);
 
 export default function HomePage() {
   return (
@@ -305,21 +302,29 @@ export default function HomePage() {
 
       {/* No. 04 — The Standard */}
       <section className="bg-ink">
-        <div className="container-page py-16 sm:py-20">
+        <div className="container-page py-24 sm:py-28">
           <Reveal>
-            <p className="dept-label">
-              <span className="dept-number text-cream">04</span>
-              <span className="text-cream/60">The Standard</span>
-            </p>
-            <h2 className="mt-4 mb-10 font-display text-2xl sm:text-3xl leading-[1.15] tracking-tight text-cream max-w-lg">
-              What makes a stay a StayHaus
-            </h2>
+            <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <p className="dept-label">
+                  <span className="dept-number text-cream">04</span>
+                  <span className="text-cream/60">The Standard</span>
+                </p>
+                <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-[2.75rem] leading-[1.1] tracking-tight text-cream max-w-lg">
+                  What makes a stay a StayHaus
+                </h2>
+              </div>
+              <p className="max-w-sm text-cream/60 leading-relaxed">
+                Four commitments we hold to on every property, every time. Hover a card to see
+                how we deliver on it.
+              </p>
+            </div>
           </Reveal>
-          <Differentiators />
+          <div className="mt-14">
+            <Differentiators />
+          </div>
         </div>
       </section>
-
-      <TestimonialsSection testimonials={fieldNotes} />
 
       {/* No. 06 — Explore Florida */}
       <section className="container-page py-24 sm:py-32">

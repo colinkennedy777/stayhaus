@@ -25,19 +25,25 @@ const items = [
 
 export function Differentiators() {
   return (
-    <div className="grid grid-cols-2 gap-4 sm:gap-5 lg:grid-cols-4 lg:gap-6">
+    <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4 lg:gap-7">
       {items.map((item, i) => (
         <Reveal key={item.index} delay={i * 0.06}>
-          <div className="group h-56 cursor-default sm:h-64 [perspective:1200px]">
+          <div className="group h-64 cursor-default transition-transform duration-500 ease-smooth hover:-translate-y-1 sm:h-80 [perspective:1200px]">
             <div className="relative h-full w-full transition-transform duration-700 ease-smooth [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-              <div className="absolute inset-0 flex flex-col justify-between border border-cream/20 bg-ink-soft/30 p-5 [backface-visibility:hidden] sm:p-6">
-                <p className="font-display italic font-light text-3xl leading-none text-powder-light sm:text-4xl">
+              <div className="absolute inset-0 flex flex-col justify-between border border-cream/20 bg-ink-soft/30 p-6 shadow-lg shadow-black/20 [backface-visibility:hidden] sm:p-7">
+                <p className="font-display italic font-light text-4xl leading-none text-powder-light sm:text-5xl">
                   {item.index}
                 </p>
-                <h3 className="font-display text-lg text-cream sm:text-xl">{item.title}</h3>
+                <div>
+                  <span className="block h-px w-8 bg-powder/50" />
+                  <h3 className="mt-4 font-display text-xl text-cream sm:text-2xl">{item.title}</h3>
+                  <p className="mt-3 text-[11px] uppercase tracking-widest2 text-cream/40">Hover to read more</p>
+                </div>
               </div>
-              <div className="absolute inset-0 flex items-center border border-powder/50 bg-ink-soft p-5 [backface-visibility:hidden] [transform:rotateY(180deg)] sm:p-6">
-                <p className="text-[13px] leading-relaxed text-cream/85 sm:text-sm">{item.description}</p>
+              <div className="absolute inset-0 flex flex-col justify-center border border-powder/60 bg-ink-soft p-6 shadow-lg shadow-black/20 [backface-visibility:hidden] [transform:rotateY(180deg)] sm:p-7">
+                <p className="font-display italic text-lg text-powder-light sm:text-xl">{item.index}</p>
+                <h3 className="mt-2 font-display text-lg text-cream sm:text-xl">{item.title}</h3>
+                <p className="mt-3 text-[13px] leading-relaxed text-cream/85 sm:text-sm">{item.description}</p>
               </div>
             </div>
           </div>
