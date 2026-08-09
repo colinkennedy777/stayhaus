@@ -5,7 +5,6 @@ import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
 import { guides } from "@/data/guides";
 import { activeDestinations, comingSoonDestinations } from "@/data/destinations";
-import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Explore Florida",
@@ -26,65 +25,64 @@ export default function ExplorePage() {
       {/* No. 01 — The Guides */}
       <section className="container-page py-24 sm:py-32">
         <Reveal>
-          <p className="dept-label">
-            <span className="dept-number">01</span> The Guides
-          </p>
-          <p className="drop-cap mt-8 max-w-2xl font-display text-xl sm:text-2xl leading-[1.6] text-ink">
-            Every StayHaus market gets its own guide, written by the team that actually spends
-            time there — not pulled from a listicle. Restaurants worth a reservation, coffee
-            worth the detour, and the neighborhoods that make each city worth staying in.
-          </p>
+          <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="dept-label">
+                <span className="dept-number">01</span> The Guides
+              </p>
+              <h2 className="mt-6 font-display text-3xl sm:text-4xl md:text-[2.75rem] leading-[1.1] tracking-tight text-ink max-w-xl">
+                Pick up an issue
+              </h2>
+            </div>
+            <p className="max-w-sm text-ink-soft/75 leading-relaxed">
+              Every StayHaus market gets its own issue, written by the team that actually spends
+              time there — not pulled from a listicle. Click a cover to open it.
+            </p>
+          </div>
         </Reveal>
 
-        <div className="mt-20 divide-y divide-ink/10 border-t border-ink/10 sm:mt-24">
+        <div className="mt-16 grid grid-cols-1 gap-10 sm:grid-cols-3 sm:gap-8">
           {guides.map((guide, i) => {
             const destination = activeDestinations.find((d) => d.slug === guide.destinationSlug);
             if (!destination) return null;
-            const reversed = i % 2 === 1;
             return (
-              <Reveal key={guide.destinationSlug} delay={i * 0.06}>
+              <Reveal
+                key={guide.destinationSlug}
+                delay={i * 0.08}
+                className={i === 1 ? "sm:mt-10" : undefined}
+              >
                 <Link
                   href={`/explore/${guide.destinationSlug}`}
-                  className="group relative block overflow-hidden py-14 sm:py-20"
+                  className="group relative block aspect-[3/4] overflow-hidden shadow-lg shadow-ink/10 transition-all duration-500 ease-smooth hover:-translate-y-2 hover:shadow-2xl hover:shadow-ink/25"
                 >
-                  <p
-                    aria-hidden
-                    className={cn(
-                      "pointer-events-none absolute -top-4 font-display italic font-light text-[10rem] sm:text-[14rem] leading-none text-ink/[0.04] select-none",
-                      reversed ? "-right-2 sm:-right-4" : "-left-2 sm:-left-4"
-                    )}
-                  >
-                    {String(i + 1).padStart(2, "0")}
-                  </p>
-                  <div
-                    className={cn(
-                      "relative flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-14",
-                      reversed && "lg:flex-row-reverse"
-                    )}
-                  >
-                    <div className="lg:w-7/12 lg:shrink-0">
-                      <div className="relative aspect-[16/10] overflow-hidden">
-                        <Image
-                          src={guide.heroImage}
-                          alt={destination.name}
-                          fill
-                          sizes="(min-width: 1024px) 60vw, 100vw"
-                          className="object-cover transition-transform duration-[1400ms] ease-smooth group-hover:scale-[1.05]"
-                        />
-                      </div>
+                  <Image
+                    src={guide.heroImage}
+                    alt={destination.name}
+                    fill
+                    sizes="(min-width: 640px) 33vw, 100vw"
+                    className="object-cover transition-transform duration-[1400ms] ease-smooth group-hover:scale-[1.06]"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink/95 via-ink/55 via-40% to-ink/10" />
+                  <div className="absolute inset-0 flex flex-col justify-between p-6 sm:p-7">
+                    <div className="flex items-center justify-between">
+                      <p className="font-display italic text-cream text-lg sm:text-xl">StayHaus Explore</p>
+                      <p className="font-display italic text-cream/70 text-sm">
+                        No. {String(i + 1).padStart(2, "0")}
+                      </p>
                     </div>
-                    <div className="lg:w-5/12">
-                      <p className="text-[10px] uppercase tracking-widest2 text-powder-deep font-medium">
+                    <div>
+                      <p className="text-[10px] uppercase tracking-widest2 text-powder-light font-medium">
                         {destination.region}
                       </p>
-                      <h2 className="mt-3 font-display italic font-light text-4xl sm:text-5xl leading-[1.05] text-ink">
-                        <span className="bg-[linear-gradient(currentColor,currentColor)] bg-no-repeat bg-[length:0%_1px] bg-[position:0_100%] transition-[background-size] duration-500 ease-smooth group-hover:bg-[length:100%_1px]">
-                          {destination.name}
+                      <h3 className="mt-2 font-display text-4xl sm:text-5xl leading-[1.02] text-cream">
+                        {destination.name}
+                      </h3>
+                      <p className="mt-4 text-cream/80 text-sm leading-relaxed line-clamp-2">{guide.intro}</p>
+                      <span className="mt-5 inline-flex items-center gap-2 text-[11px] uppercase tracking-widest2 text-cream/90 font-medium">
+                        Open Issue
+                        <span aria-hidden className="transition-transform duration-500 ease-smooth group-hover:translate-x-1">
+                          &rarr;
                         </span>
-                      </h2>
-                      <p className="mt-6 max-w-md text-ink-soft/75 leading-relaxed">{guide.intro}</p>
-                      <span className="mt-7 inline-block text-sm text-clay link-underline">
-                        Read the guide &rarr;
                       </span>
                     </div>
                   </div>
