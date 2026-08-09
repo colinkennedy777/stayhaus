@@ -16,7 +16,7 @@ export default function ExplorePage() {
   return (
     <>
       <PageHero
-        image="/images/explore/hero.svg"
+        image="/images/explore/hero.jpg"
         eyebrow="Explore Florida"
         title="Florida, as told by the people who stay here."
         description="Editorial guides to every StayHaus market — restaurants, coffee, beaches, and the neighborhoods worth knowing. Written by our team, updated as we grow."
