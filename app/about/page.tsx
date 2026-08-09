@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { PageHero } from "@/components/PageHero";
+import { MagazineHero } from "@/components/MagazineHero";
 import { Reveal } from "@/components/Reveal";
 import { Button } from "@/components/Button";
 
@@ -41,11 +41,13 @@ const standards = [
 export default function AboutPage() {
   return (
     <>
-      <PageHero
-        image="/images/destinations/gulf-beaches.jpg"
+      <MagazineHero
+        image="/images/about/hero.jpg"
+        alt="City skyline at night"
         eyebrow="About StayHaus"
         title="A hospitality brand, built one home at a time."
         description="We started on Florida's West Coast with a simple belief: a short-term stay should feel as considered as a boutique hotel — never generic, never an afterthought."
+        objectPosition="50% 60%"
       />
 
       {/* No. 01 — How We Started */}

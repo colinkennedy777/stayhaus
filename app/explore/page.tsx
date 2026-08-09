@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { MagazineHero } from "@/components/MagazineHero";
 import { Reveal } from "@/components/Reveal";
 import { guides } from "@/data/guides";
 import { activeDestinations, comingSoonDestinations } from "@/data/destinations";
@@ -14,29 +15,14 @@ export const metadata: Metadata = {
 export default function ExplorePage() {
   return (
     <>
-      {/* Cover */}
-      <section className="relative h-[110vh] max-h-[1300px] min-h-[720px] w-full overflow-hidden sm:h-[120vh] lg:h-[130vh]">
-        <Image
-          src="/images/explore/hero.jpg"
-          alt="Reading the morning paper, StayHaus style"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-[50%_15%]"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-ink/70 via-ink/15 to-transparent" />
-        <div className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-cream via-cream/70 to-transparent" />
-        <div className="container-page relative z-10 pt-32 sm:pt-40">
-          <p className="eyebrow eyebrow-light mb-5">Explore Florida</p>
-          <h1 className="font-display italic font-light text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-cream max-w-3xl">
-            Florida, as told by the people who stay here.
-          </h1>
-          <p className="mt-7 max-w-xl text-cream/85 text-[15px] sm:text-base leading-relaxed">
-            Editorial guides to every StayHaus market — restaurants, coffee, beaches, and the
-            neighborhoods worth knowing. Written by our team, updated as we grow.
-          </p>
-        </div>
-      </section>
+      <MagazineHero
+        image="/images/explore/hero.jpg"
+        alt="Reading the morning paper, StayHaus style"
+        eyebrow="Explore Florida"
+        title="Florida, as told by the people who stay here."
+        description="Editorial guides to every StayHaus market — restaurants, coffee, beaches, and the neighborhoods worth knowing. Written by our team, updated as we grow."
+        objectPosition="50% 15%"
+      />
 
       {/* No. 01 — The Guides */}
       <section className="container-page py-24 sm:py-32">

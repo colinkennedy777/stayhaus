@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { PageHero } from "@/components/PageHero";
+import { MagazineHero } from "@/components/MagazineHero";
 import { Reveal } from "@/components/Reveal";
 import { SectionHeading } from "@/components/SectionHeading";
 import { OwnerInquiryForm } from "@/components/OwnerInquiryForm";
@@ -45,11 +45,13 @@ const advantages = [
 export default function PartnerPage() {
   return (
     <>
-      <PageHero
-        image="/images/partner/hero.svg"
+      <MagazineHero
+        image="/images/partner/hero.jpg"
+        alt="A handshake sealing a partnership"
         eyebrow="Property Owners"
         title="Your property, elevated into a brand."
         description="StayHaus partners with Florida property owners to design, furnish, market, and manage homes to a single hospitality standard — so your investment performs like part of something larger."
+        objectPosition="58% 50%"
       />
 
       {/* Pillars */}
